@@ -15,8 +15,8 @@ function ChooseFuture() {
     };
     return (
         <div>
-            <div class="grid grid-cols-12 gap-4 py-20 px-40">
-                <div class="col-span-4 pt-6">
+            <div class="grid grid-cols-12 gap-4 py-20 sm:px-40 px-10">
+                <div class="sm:col-span-4 col-span-12 pt-6">
                     <p className='text-5xl font-bold text-gray-700 mb-2'>Choose</p>
                     <p className='text-5xl font-bold text-gray-700 mb-2'>Future Your</p>
                     <p className='text-5xl font-bold text-gray-700'>Career</p>
@@ -28,7 +28,7 @@ function ChooseFuture() {
                         </div>
                     </div>
                 </div>
-                <div class="col-span-4">
+                <div class="sm:col-span-4 col-span-12">
                     <div>
                         <Lottie
                             options={defaultOptions}
@@ -37,13 +37,13 @@ function ChooseFuture() {
                         />
                     </div>
                 </div>
-                <div class="col-span-4">
-                    <div className='flex flex-col items-start pl-28 space-y-6'>
+                <div class="sm:col-span-4 col-span-12">
+                    <div className='flex flex-col items-start pl-5 sm:pl-28 space-y-6'>
                         <div>
                             <p className='text-2xl font-bold text-gray-700'>18,000</p>
                             <p className='text-sm font-bold text-gray-700 mb-2'>Students using <br />and it's free.</p>
                         </div>
-                        <div className='pl-20'>
+                        <div className='sm:pl-20 pl-28'>
                             <p className='text-2xl font-bold text-gray-700'>1,200+</p>
                             <p className='text-sm font-bold text-gray-700 mb-2'>Courses covering <br />95% of exams.</p>
                         </div>
@@ -55,7 +55,7 @@ function ChooseFuture() {
                 </div>
             </div>
 
-            <div className="px-40">
+            <div className="sm:px-40">
                 <div className="max-w-7xl bg-gray-100 rounded-md mx-auto py-8 px-4 sm:px-6 lg:py-8 lg:px-8 lg:flex lg:items-center lg:justify-between">
                     <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                         <span className="block">Ready to dive in?</span>

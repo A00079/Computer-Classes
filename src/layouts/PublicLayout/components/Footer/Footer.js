@@ -63,7 +63,7 @@ const Footer = (props) => {
                 </li>
               </nav>
             </div>
-            <div class="lg:w-1/2 md:w-1/2 w-full px-4">
+            {/* <div class="lg:w-1/2 md:w-1/2 w-full px-4">
               <p class="text-sm mt-2 text-gray-200 mb-4 w-full">Download the app form.</p>
               <div class="flex flex-row">
                 <button class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
@@ -86,7 +86,7 @@ const Footer = (props) => {
                   </span>
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div class="bg-gray-100">

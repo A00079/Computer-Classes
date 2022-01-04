@@ -32,7 +32,7 @@ function BoostLearning() {
                                     <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
                                 </div>
                                 <div>
-                                    <p class="mb-3 leading-relaxed font-bold">Unlimited Access, Including Expert-Verified Answers.</p>
+                                    <p class="mb-3 leading-relaxed text-left font-bold">Unlimited Access, Including Expert-Verified Answers.</p>
                                 </div>
                             </div>
                             <div className='flex flex-row justify-start space-x-3'>
@@ -40,7 +40,7 @@ function BoostLearning() {
                                     <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
                                 </div>
                                 <div>
-                                    <p class="mb-3 leading-relaxed font-bold">Faster Answers To Your Questions.</p>
+                                    <p class="mb-3 leading-relaxed text-left font-bold">Faster Answers To Your Questions.</p>
                                 </div>
                             </div>
                             <div className='flex flex-row justify-start space-x-3'>
@@ -48,18 +48,27 @@ function BoostLearning() {
                                     <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
                                 </div>
                                 <div>
-                                    <p class="mb-3 leading-relaxed font-bold">24/7 Help Support For Any Doubts and Quires.</p>
+                                    <p class="mb-3 leading-relaxed text-left font-bold">24/7 Help Support For Any Doubts and Quires.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                        <div className='block sm:hidden'>
+                            <Lottie
+                                options={defaultOptions}
+                                height={120}
+                                width={250}
+                            />
+                        </div>
                         <div>
+                        <div className='hidden sm:block'>
                             <Lottie
                                 options={defaultOptions}
                                 height={250}
                                 width={500}
                             />
+                        </div>
                         </div>
                     </div>
                 </div>

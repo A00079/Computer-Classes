@@ -6,9 +6,9 @@ function OurCourses() {
 
     return (
         <header>
-            <div class="w-full bg-center bg-cover h-screen" style={{ backgroundImage: 'url(img/robot.jpg)' }}>
+            <div class="w-full bg-center bg-cover sm:h-screen h-auto" style={{ backgroundImage: 'url(img/robot.webp)' }}>
                 <div class="grid grid-cols-12 gap-4 py-20 px-20">
-                    <div class="col-span-6">
+                    <div class="sm:col-span-6 col-span-12 sm:block hidden">
                         <div className='flex flex-col justify-between items-start'>
                             <div className='text-xl font-bold text-white'>
                                 <span className='text-gray-500'>Explorer</span> our Courses
@@ -23,11 +23,11 @@ function OurCourses() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-span-6">
-                        <div className='flex flex-col justify-between items-end space-y-8'>
+                    <div class="sm:col-span-6 col-span-12">
+                        <div className='flex flex-col justify-between items-center sm:items-end space-y-8'>
 
-                            <div className='flex flex-col justify-between items-start space-y-5'>
-                                <div class="w-80">
+                            <div className='flex flex-col justify-between items-center sm:items-start space-y-5'>
+                                <div class="sm:w-80 w-full">
                                     <div class="h-full flex items-center rounded-lg">
                                         <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" />
                                         <div class="flex-grow">

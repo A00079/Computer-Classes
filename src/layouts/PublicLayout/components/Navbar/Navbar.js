@@ -15,7 +15,10 @@ import {
   ViewGridIcon,
   XIcon,
 } from '@heroicons/react/outline'
-import { ChevronDownIcon } from '@heroicons/react/solid'
+import { ChevronDownIcon } from '@heroicons/react/solid';
+import { Link, animateScroll as scroll } from "react-scroll";
+import { withRouter } from "react-router";
+
 
 const solutions = [
   {
@@ -79,9 +82,14 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Navbar() {
+const Navbar = (props) => {
+
+  const handleNAvigate = (navigateVal) => {
+    props.history.push(navigateVal);
+  }
+
   return (
-    <Popover className="fixed bg-black w-full" style={{zIndex: "9999"}}>
+    <Popover className="fixed bg-black w-full" style={{ zIndex: "9999" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -101,7 +109,7 @@ export default function Navbar() {
             </Popover.Button>
           </div>
           <Popover.Group as="nav" className="hidden md:flex space-x-10">
-            <Popover className="relative">
+            {/* <Popover className="relative">
               {({ open }) => (
                 <>
                   <Popover.Button
@@ -164,16 +172,38 @@ export default function Navbar() {
                   </Transition>
                 </>
               )}
-            </Popover>
+            </Popover> */}
 
-            <a href="#" className="text-base font-medium text-gray-200 hover:text-gray-900">
-              Pricing
-            </a>
-            <a href="#" className="text-base font-medium text-gray-200 hover:text-gray-900">
-              Docs
-            </a>
+            <div onClick={() => handleNAvigate('/')} className="cursor-pointer text-base font-medium text-gray-200 hover:text-yellow-400">
+              Home
+            </div>
+            <Link
+              to='our-courses'
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={900}
+            >
+              <div className="cursor-pointer text-base font-medium text-gray-200 hover:text-yellow-400">
+                Academics
+              </div>
+            </Link>
+            <Link
+              to='best-professionals'
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={900}
+            >
+              <div className="cursor-pointer text-base font-medium text-gray-200 hover:text-yellow-400">
+                Our Professionals
+              </div>
+            </Link>
+            <div onClick={() => handleNAvigate('/contact')} className="cursor-pointer text-base font-medium text-gray-200 hover:text-yellow-400">
+              Contact
+            </div>
 
-            <Popover className="relative">
+            {/* <Popover className="relative">
               {({ open }) => (
                 <>
                   <Popover.Button
@@ -223,7 +253,7 @@ export default function Navbar() {
                   </Transition>
                 </>
               )}
-            </Popover>
+            </Popover> */}
           </Popover.Group>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <a
@@ -323,3 +353,5 @@ export default function Navbar() {
     </Popover>
   )
 }
+
+export default withRouter(Navbar);

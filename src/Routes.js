@@ -13,6 +13,8 @@ import {
   isBrowser,
   isMobile,
 } from "react-device-detect";
+import ContactUs from './pages/ContactUs';
+
 const Routes = () => {
   return (
     <Router>
@@ -22,6 +24,12 @@ const Routes = () => {
           path="/"
           layout={PublicLayout}
           component={Home}
+        />
+        <WithLayoutRoute
+          exact
+          path="/contact"
+          layout={PublicLayout}
+          component={ContactUs}
         />
         <Route path="*" component={() => "404 NOT FOUND"} />
       </Switch>
