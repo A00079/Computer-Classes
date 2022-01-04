@@ -30,33 +30,24 @@ const Footer = (props) => {
                   <a class="text-gray-600 hover:text-gray-200 font-semibold cursor-pointer">Home</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-200 font-semibold cursor-pointer">We Are Here</a>
+                  <a class="text-gray-600 hover:text-gray-200 font-semibold cursor-pointer">Academics</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-200 font-semibold cursor-pointer">Cake For Special Once</a>
+                  <a class="text-gray-600 hover:text-gray-200 font-semibold cursor-pointer">Our Professionals</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-200 font-semibold cursor-pointer">How We Work</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-gray-200 font-semibold cursor-pointer">Our Services</a>
+                  <a class="text-gray-600 hover:text-gray-200 font-semibold cursor-pointer">Testimonials</a>
                 </li>
               </nav>
             </div>
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 class="title-font font-bold text-gray-200 tracking-widest text-sm mb-3">Section</h2>
               <nav class="list-none mb-10">
-                <li onClick={() => { goTo('/about') }}>
-                  <a class="text-gray-600 hover:text-gray-200 font-semibold cursor-pointer">About Us</a>
-                </li>
                 <li onClick={() => { goTo('/terms-and-conditions') }}>
                   <a class="text-gray-600 hover:text-gray-200 font-semibold cursor-pointer">Terms and Condition</a>
                 </li>
                 <li onClick={() => { goTo('/privacy-policy') }}>
                   <a class="text-gray-600 hover:text-gray-200 font-semibold cursor-pointer">Privacy Policy</a>
-                </li>
-                <li onClick={() => { goTo('/pricing') }}>
-                  <a class="text-gray-600 hover:text-gray-200 font-semibold cursor-pointer">Pricing</a>
                 </li>
                 <li onClick={() => { goTo('/contact') }}>
                   <a class="text-gray-600 hover:text-gray-200 font-semibold cursor-pointer">Contact</a>
@@ -97,8 +88,8 @@ const Footer = (props) => {
               </svg>
               <span style={{ fontFamily: 'Luckiest Guy' }} class="ml-3 text-xl tracking-wider"><span style={{ fontFamily: 'Luckiest Guy' }} className="text-gray-600 tracking-wider">SkillTech</span></span>
             </a>
-            <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2021 SkillTech —
-        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@some@gmail.com</a>
+            <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2022 SkillTech —
+        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@team.candidleads@gmail.com</a>
             </p>
             <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
               <a class="text-gray-500">

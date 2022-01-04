@@ -1,16 +1,33 @@
 import React from 'react';
 import Lottie from 'react-lottie';
+import animationData from '../../../../lotties/businessman-taking-notes.json';
 
-function BoostLearning() {
-
+function BoostProfessional() {
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice"
+        }
+    };
     return (
         <div>
             <div class="container px-5 mx-auto">
-                <div class="flex flex-col text-left w-full mb-10">
-                    <h2 class="text-xs text-gray-500 tracking-widest font-bold title-font mb-1">PROFESSIONALS </h2>
-                    <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-yellow-500">Professionals Instructors.</h1>
-                    <p class="lg:w-2/3 text-left leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
-                    <div class="h-1 w-40 mt-4 text-left bg-yellow-500 rounded"></div>
+                <div className='flex flex-row justify-between items-center w-full'>
+                    <div class="flex flex-col text-left w-full mb-10">
+                        <h2 class="text-xs text-gray-500 tracking-widest font-bold title-font mb-1">PROFESSIONALS </h2>
+                        <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-yellow-500">Professionals Instructors.</h1>
+                        <p class="lg:w-2/3 text-left leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+                        <div class="h-1 w-40 mt-4 text-left bg-yellow-500 rounded"></div>
+                    </div>
+                    <div className='sm:block hidden'>
+                        <Lottie
+                            options={defaultOptions}
+                            height={180}
+                            width={200}
+                        />
+                    </div>
                 </div>
             </div>
             <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4">
@@ -48,4 +65,4 @@ function BoostLearning() {
     )
 }
 
-export default BoostLearning
+export default BoostProfessional;

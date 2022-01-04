@@ -1,6 +1,6 @@
 import React from 'react';
 import Lottie from 'react-lottie';
-import animationData from '../../../../lotties/skater-making-tricks.json';
+import animationData from '../../../../lotties/confuse-person.json';
 
 
 function WhyChooseUs() {
@@ -16,10 +16,19 @@ function WhyChooseUs() {
     return (
         <section class="text-gray-600 body-font">
             <div class="container px-5 py-24 mx-auto">
-                <div class="container px-5 mx-auto">
-                    <div class="flex flex-col text-right w-full mb-10">
-                        <h2 class="text-xs text-gray-500 tracking-widest font-bold title-font mb-1">WHY CHOOSE</h2>
-                        <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-yellow-500">Why Choose Us.</h1>
+                <div className='flex flex-row justify-between items-center mb-5'>
+                    <div className='sm:block hidden'>
+                        <Lottie
+                            options={defaultOptions}
+                            height={180}
+                            width={200}
+                        />
+                    </div>
+                    <div class="px-5">
+                        <div class="flex flex-col text-right w-full mb-10">
+                            <h2 class="text-xs text-gray-500 tracking-widest font-bold title-font mb-1">WHY CHOOSE</h2>
+                            <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-yellow-500">Why Choose Us.</h1>
+                        </div>
                     </div>
                 </div>
                 <div class="flex flex-wrap -m-4">

@@ -1,25 +1,43 @@
 import React from 'react';
 import Lottie from 'react-lottie';
-
+import animationData from '../../../../lotties/distance-education.json';
+import { Link } from 'react-router-dom';
 
 function OurCourses() {
-
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice"
+        }
+    };
     return (
         <header>
-            <div class="w-full bg-center bg-cover sm:h-screen h-auto" style={{ backgroundImage: 'url(img/robot.webp)' }}>
+            <div class="w-full bg-center bg-cover h-auto" style={{ backgroundImage: 'url(img/robot.webp)' }}>
                 <div class="grid grid-cols-12 gap-4 py-20 px-20">
                     <div class="sm:col-span-6 col-span-12 sm:block hidden">
                         <div className='flex flex-col justify-between items-start'>
                             <div className='text-xl font-bold text-white'>
                                 <span className='text-gray-500'>Explorer</span> our Courses
                             </div>
-                            <div className='mt-80 flex flex-col justify-between'>
+                            <div className='sm:block hidden mt-10'>
+                                <Lottie
+                                    options={defaultOptions}
+                                    height={300}
+                                    width={400}
+                                />
+                            </div>
+                            <div className='mt-10 flex flex-col justify-between'>
                                 <div className='text-xs font-medium text-white uppercase'>Find Any Course You Want.</div>
                                 <div className='text-5xl font-bold text-white uppercase'>Professional Courses.</div>
                             </div>
                             <div className='flex flex-row justify-start items-center'>
-                                <button className='text-md mt-3 font-bold px-4  py-2 rounded-sm bg-black text-white'>Register Now</button>
-                                <button className=' ml-5 text-md mt-3 font-bold px-8  py-1 rounded-sm bg-transparent border-2 border-gray-300 text-white'>View All</button>
+                                <Link to='student-resgistration'>
+
+                                    <button className='cursor-pointer text-md mt-3 font-bold px-4  py-2 rounded-sm bg-white text-black'>Register Now</button>
+                                </Link>
+                                {/* <button className=' ml-5 text-md mt-3 font-bold px-8  py-1 rounded-sm bg-transparent border-2 border-gray-300 text-white'>View All</button> */}
                             </div>
                         </div>
                     </div>

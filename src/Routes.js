@@ -14,6 +14,9 @@ import {
   isMobile,
 } from "react-device-detect";
 import ContactUs from './pages/ContactUs';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TearmsAndConditions from './pages/TearmsAndConditions';
+import RegistrationForm from './pages/RegistrationForm';
 
 const Routes = () => {
   return (
@@ -30,6 +33,24 @@ const Routes = () => {
           path="/contact"
           layout={PublicLayout}
           component={ContactUs}
+        />
+        <WithLayoutRoute
+          exact
+          path="/privacy-policy"
+          layout={PublicLayout}
+          component={PrivacyPolicy}
+        />
+        <WithLayoutRoute
+          exact
+          path="/terms-and-conditions"
+          layout={PublicLayout}
+          component={TearmsAndConditions}
+        />
+        <WithLayoutRoute
+          exact
+          path="/student-resgistration"
+          layout={PublicLayout}
+          component={RegistrationForm}
         />
         <Route path="*" component={() => "404 NOT FOUND"} />
       </Switch>

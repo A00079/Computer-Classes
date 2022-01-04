@@ -174,7 +174,7 @@ const Navbar = (props) => {
               )}
             </Popover> */}
 
-            <div onClick={() => handleNAvigate('/')} className="cursor-pointer text-base font-medium text-gray-200 hover:text-yellow-400">
+            <div onClick={() => handleNAvigate('/')} className="cursor-pointer text-sm font-bold text-gray-200 hover:text-yellow-400">
               Home
             </div>
             <Link
@@ -184,7 +184,7 @@ const Navbar = (props) => {
               offset={-70}
               duration={900}
             >
-              <div className="cursor-pointer text-base font-medium text-gray-200 hover:text-yellow-400">
+              <div className="cursor-pointer text-sm font-bold text-gray-200 hover:text-yellow-400">
                 Academics
               </div>
             </Link>
@@ -195,11 +195,22 @@ const Navbar = (props) => {
               offset={-70}
               duration={900}
             >
-              <div className="cursor-pointer text-base font-medium text-gray-200 hover:text-yellow-400">
+              <div className="cursor-pointer text-sm font-bold text-gray-200 hover:text-yellow-400">
                 Our Professionals
               </div>
             </Link>
-            <div onClick={() => handleNAvigate('/contact')} className="cursor-pointer text-base font-medium text-gray-200 hover:text-yellow-400">
+            <Link
+              to='testimonials'
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={900}
+            >
+              <div className="cursor-pointer text-sm font-bold text-gray-200 hover:text-yellow-400">
+                Testimonials
+              </div>
+            </Link>
+            <div onClick={() => handleNAvigate('/contact')} className="cursor-pointer text-sm font-bold text-gray-200 hover:text-yellow-400">
               Contact
             </div>
 
@@ -256,12 +267,13 @@ const Navbar = (props) => {
             </Popover> */}
           </Popover.Group>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <a
-              href="#"
+            <div
+              onClick={() => handleNAvigate('/student-resgistration')}
               className="whitespace-nowrap text-sm inline-flex items-center justify-center px-2 py-1 border border-transparent rounded-sm shadow-sm  font-bold text-white bg-green-500 hover:bg-indigo-700"
             >
               Register Now
-            </a>
+            </div>
+
             <img
               className="ml-8 h-8 w-auto sm:h-8"
               src="img/india.png"
