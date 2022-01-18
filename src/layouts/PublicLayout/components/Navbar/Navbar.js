@@ -71,6 +71,18 @@ const resources = [
     icon: CalendarIcon,
   },
   { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#', icon: ShieldCheckIcon },
+  {
+    name: 'Help Center',
+    description: 'Get all of your questions answered in our forums or contact support.',
+    href: '#',
+    icon: SupportIcon,
+  },
+  {
+    name: 'Guides',
+    description: 'Learn how to maximize our platform to get the most out of it.',
+    href: '#',
+    icon: BookmarkAltIcon,
+  },
 ]
 const recentPosts = [
   { id: 1, name: 'Boost your conversion rate', href: '#' },
@@ -91,13 +103,13 @@ const Navbar = (props) => {
   return (
     <Popover className="fixed bg-black w-full" style={{ zIndex: "9999" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
+        <div className="flex justify-between items-center py-2 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
               <span className="sr-only">Workflow</span>
               <img
-                className="h-8 w-auto sm:h-10"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                className="h-8 w-auto sm:h-14"
+                src="/img/Brand-logo.png"
                 alt=""
               />
             </a>
@@ -177,17 +189,60 @@ const Navbar = (props) => {
             <div onClick={() => handleNAvigate('/')} className="cursor-pointer text-sm font-bold text-gray-200 hover:text-yellow-400">
               Home
             </div>
-            <Link
-              to='our-courses'
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={900}
-            >
-              <div className="cursor-pointer text-sm font-bold text-gray-200 hover:text-yellow-400">
-                Academics
-              </div>
-            </Link>
+            {/* <div className="cursor-pointer text-sm font-bold text-gray-200 hover:text-yellow-400">
+              Courses
+            </div> */}
+            <Popover className="relative">
+              {({ open }) => (
+                <>
+                  <Popover.Button
+                    className={classNames(
+                      open ? 'text-yellow-400' : 'text-gray-200',
+                      'group bg-transparent text-sm rounded-md inline-flex items-center  font-bold hover:text-yellow-400'
+                    )}
+                  >
+                    <span>Courses</span>
+                    <ChevronDownIcon
+                      className={classNames(
+                        open ? 'text-gray-600' : 'text-gray-400',
+                        'ml-2 h-5 w-5 group-hover:text-gray-200'
+                      )}
+                      aria-hidden="true"
+                    />
+                  </Popover.Button>
+
+                  <Transition
+                    as={Fragment}
+                    enter="transition ease-out duration-200"
+                    enterFrom="opacity-0 translate-y-1"
+                    enterTo="opacity-100 translate-y-0"
+                    leave="transition ease-in duration-150"
+                    leaveFrom="opacity-100 translate-y-0"
+                    leaveTo="opacity-0 translate-y-1"
+                  >
+                    <Popover.Panel className="absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-auto max-w-md sm:px-0">
+                      <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                        <div className="relative grid grid-cols-12 gap-4 px-5 py-3  bg-white">
+                          {resources.map((item) => (
+                            <a
+                              key={item.name}
+                              href={item.href}
+                              className="-m-3 p-3 w-full sm:col-span-3 col-span-12 rounded-lg hover:bg-gray-50"
+                            >
+                              {/* <item.icon className="h-6 w-6 text-indigo-600" aria-hidden="true" /> */}
+                              <div className="ml-4">
+                                <p className="text-base font-medium text-gray-900">{item.name}</p>
+                                <p className="mt-1 text-sm text-gray-500">{item.description}</p>
+                              </div>
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    </Popover.Panel>
+                  </Transition>
+                </>
+              )}
+            </Popover>
             <Link
               to='best-professionals'
               spy={true}
@@ -214,57 +269,7 @@ const Navbar = (props) => {
               Contact
             </div>
 
-            {/* <Popover className="relative">
-              {({ open }) => (
-                <>
-                  <Popover.Button
-                    className={classNames(
-                      open ? 'text-gray-900' : 'text-gray-200',
-                      'group bg-transparent rounded-md inline-flex items-center text-base font-medium hover:text-gray-900'
-                    )}
-                  >
-                    <span>More</span>
-                    <ChevronDownIcon
-                      className={classNames(
-                        open ? 'text-gray-600' : 'text-gray-400',
-                        'ml-2 h-5 w-5 group-hover:text-gray-200'
-                      )}
-                      aria-hidden="true"
-                    />
-                  </Popover.Button>
-
-                  <Transition
-                    as={Fragment}
-                    enter="transition ease-out duration-200"
-                    enterFrom="opacity-0 translate-y-1"
-                    enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in duration-150"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 translate-y-1"
-                  >
-                    <Popover.Panel className="absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0">
-                      <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                        <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                          {resources.map((item) => (
-                            <a
-                              key={item.name}
-                              href={item.href}
-                              className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
-                            >
-                              <item.icon className="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" />
-                              <div className="ml-4">
-                                <p className="text-base font-medium text-gray-900">{item.name}</p>
-                                <p className="mt-1 text-sm text-gray-500">{item.description}</p>
-                              </div>
-                            </a>
-                          ))}
-                        </div>
-                      </div>
-                    </Popover.Panel>
-                  </Transition>
-                </>
-              )}
-            </Popover> */}
+            
           </Popover.Group>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <div
@@ -298,8 +303,8 @@ const Navbar = (props) => {
               <div className="flex items-center justify-between">
                 <div>
                   <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                    className="h-12 w-auto"
+                    src="/img/Brand-logo.png"
                     alt="Workflow"
                   />
                 </div>

@@ -5,3 +5,5 @@ export { default as ChooseFuture } from './ChooseFuture';
 export { default as WhyChooseUs } from './WhyChooseUs';
 export { default as ResourcesInsights } from './ResourcesInsights';
 export { default as Testimonials } from './Testimonials';
+export { default as FacilitiesAdvantages } from './FacilitiesAdvantages';
+export { default as CoursesCategory } from './CoursesCategory';

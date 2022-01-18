@@ -15,7 +15,7 @@ function WhyChooseUs() {
     };
     return (
         <section class="text-gray-600 body-font">
-            <div class="container px-5 py-24 mx-auto">
+            <div class="container px-5 mx-auto">
                 <div className='flex flex-row justify-between items-center mb-5'>
                     <div className='sm:block hidden'>
                         <Lottie
