@@ -53,36 +53,23 @@ const callsToAction = [
 ]
 const resources = [
   {
-    name: 'Help Center',
-    description: 'Get all of your questions answered in our forums or contact support.',
+    name: 'Recommended Courses',
+    topics: ['Diploma In Ms-Office & Tally', 'I Tech Certified HardWare And NetWork Engineer', 'I Tech Certified SoftWare Engineering', 'I Tech Certified Animation Programs'],
     href: '#',
     icon: SupportIcon,
   },
   {
-    name: 'Guides',
-    description: 'Learn how to maximize our platform to get the most out of it.',
+    name: 'Spoken English',
+    topics: ['I Tech Certified Animation Programs'],
     href: '#',
     icon: BookmarkAltIcon,
   },
   {
-    name: 'Events',
-    description: 'See what meet-ups and other events we might be planning near you.',
+    name: 'Job Oriented Course',
+    topics: ['Diploma In Ms-Office & Tally', 'I Tech Certified HardWare And NetWork Engineer', 'I Tech Certified SoftWare Engineering', 'I Tech Certified Animation Programs'],
     href: '#',
     icon: CalendarIcon,
-  },
-  { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#', icon: ShieldCheckIcon },
-  {
-    name: 'Help Center',
-    description: 'Get all of your questions answered in our forums or contact support.',
-    href: '#',
-    icon: SupportIcon,
-  },
-  {
-    name: 'Guides',
-    description: 'Learn how to maximize our platform to get the most out of it.',
-    href: '#',
-    icon: BookmarkAltIcon,
-  },
+  }
 ]
 const recentPosts = [
   { id: 1, name: 'Boost your conversion rate', href: '#' },
@@ -101,7 +88,7 @@ const Navbar = (props) => {
   }
 
   return (
-    <Popover className="fixed bg-black w-full" style={{ zIndex: "9999" }}>
+    <Popover className="fixed bg-black w-full relative" style={{ zIndex: "9999" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center py-2 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -109,7 +96,7 @@ const Navbar = (props) => {
               <span className="sr-only">Workflow</span>
               <img
                 className="h-8 w-auto sm:h-14"
-                src="/img/Brand-logo.png"
+                src="/img/DCS-Brand-Logo-Black.png"
                 alt=""
               />
             </a>
@@ -192,7 +179,7 @@ const Navbar = (props) => {
             {/* <div className="cursor-pointer text-sm font-bold text-gray-200 hover:text-yellow-400">
               Courses
             </div> */}
-            <Popover className="relative">
+            <Popover className="">
               {({ open }) => (
                 <>
                   <Popover.Button
@@ -220,19 +207,32 @@ const Navbar = (props) => {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 translate-y-1"
                   >
-                    <Popover.Panel className="absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-auto max-w-md sm:px-0">
+                    <Popover.Panel className="absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-full sm:px-40">
                       <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                        <div className="relative grid grid-cols-12 gap-4 px-5 py-3  bg-white">
+                        <div className="relative grid grid-cols-12 gap-4 px-5 py-6  bg-white">
                           {resources.map((item) => (
                             <a
                               key={item.name}
                               href={item.href}
-                              className="-m-3 p-3 w-full sm:col-span-3 col-span-12 rounded-lg hover:bg-gray-50"
+                              className="-m-3 p-3 w-full sm:col-span-4 col-span-12 rounded-lg hover:bg-gray-50"
                             >
                               {/* <item.icon className="h-6 w-6 text-indigo-600" aria-hidden="true" /> */}
                               <div className="ml-4">
-                                <p className="text-base font-medium text-gray-900">{item.name}</p>
-                                <p className="mt-1 text-sm text-gray-500">{item.description}</p>
+                                <p className="text-base text-indigo-500 font-bold  mb-3">{item.name}</p>
+                                <ul className='space-y-4'>
+                                  {
+                                    item.topics.map((el, index) => {
+                                      return (
+                                        <li className='text-xs font-bold text-gray-500 hover:text-blue-500'>
+                                          <div className='flex flex-row justify-start items-center'>
+                                            <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                                            <p>{el}</p>
+                                          </div>
+                                        </li>
+                                      )
+                                    })
+                                  }
+                                </ul>
                               </div>
                             </a>
                           ))}
@@ -269,7 +269,7 @@ const Navbar = (props) => {
               Contact
             </div>
 
-            
+
           </Popover.Group>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <div

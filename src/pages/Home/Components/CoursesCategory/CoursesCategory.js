@@ -144,33 +144,33 @@ function CoursesCategory(props) {
     const [courseTechSoftwareCareerOptions, setCourseTechSoftwareCareerOptions] = useState([
         {
             'title': 'Web  Programmer',
-            'img':'webprogrammer.png',
+            'img': 'webprogrammer.png',
             'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
         },
         {
             'title': 'System Programmer',
-            'img':'SystemProgrammer.png',
+            'img': 'SystemProgrammer.png',
 
             'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
         },
         {
             'title': 'System Analyst',
-            'img':'analyst.png',
+            'img': 'analyst.png',
             'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
         },
         {
             'title': 'Software Developer',
-            'img':'SoftwareDeveloper.png',
+            'img': 'SoftwareDeveloper.png',
             'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
         },
         {
             'title': 'Database Designer',
-            'img':'database.png',
+            'img': 'database.png',
             'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
         },
         {
             'title': 'Project Manager',
-            'img':'manager.png',
+            'img': 'manager.png',
 
             'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
         },
@@ -207,35 +207,35 @@ function CoursesCategory(props) {
     const [courseTechAnimationCareerOptions, setCourseTechAnimationCareerOptions] = useState([
         {
             'title': 'Graphics Designer',
-            'img':'graphic-designer.png',
+            'img': 'graphic-designer.png',
             'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
         },
         {
             'title': '2D & 3D Animator',
-            'img':'3d-movie.png',
+            'img': '3d-movie.png',
             'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
         },
         {
             'title': 'Audio & Video Editor',
-            'img':'film-editor.png',
+            'img': 'film-editor.png',
 
             'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
         },
         {
             'title': 'Web Designer',
-            'img':'SoftwareDeveloper.png',
+            'img': 'SoftwareDeveloper.png',
 
             'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
         },
         {
             'title': 'Special Effects Artist',
-            'img':'effect-artist.png',
+            'img': 'effect-artist.png',
 
             'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
         },
         {
             'title': 'Motion Effects Artist',
-            'img':'motion-artist.png',
+            'img': 'motion-artist.png',
             'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
         }
     ])
@@ -289,20 +289,20 @@ function CoursesCategory(props) {
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
                         <h1 class="sm:text-2xl text-2xl text-left font-bold title-font text-gray-600">Recommended Courses</h1>
                     </div>
-                    <div class="flex flex-wrap -m-2">
+                    <div class="flex flex-wrap sm:-m-2 px-2 sm:px-0">
                         {
-                            ['Diploma In Ms-Office & Tally', 'I Tech Certified HardWare And NetWork Engineer', 'I Tech Certified SoftWare Engineering', 'I Tech Certified Animation Programs'].map((el, index) => {
+                            [{ 'title': 'Diploma In Ms-Office & Tally', img: 'SM-Diploma-In-Ms-Office-Tally' }, { 'title': 'I Tech Certified HardWare And NetWork Engineer', img: 'SM-I-Tech-Certified-HardWare-And-NetWork-Engineer' }, { 'title': 'I Tech Certified SoftWare Engineering', img: 'SM-I-Tech-Certified-SoftWare-Engineering' }, { 'title': 'I Tech Certified Animation Programs', img: 'SM-I-Tech-Certified-Animation-Programs' }].map((el, index) => {
                                 return (
-                                    <div onClick={() => { handleDetaileCourseView(el) }} class="lg:w-1/4 sm:w-1/2 p-2 cursor-pointer" key={index}>
+                                    <div onClick={() => { handleDetaileCourseView(el.title) }} class="lg:w-1/4 sm:w-1/2 p-2 cursor-pointer" key={index}>
                                         <div class="flex relative">
-                                            <img alt="gallery" class="absolute  inset-0 w-80 h-44 object-fit object-center" src="img/Banner-Diploma-Ms-Office.png" />
+                                            <img alt="gallery" class="absolute  inset-0 w-80 h-44 object-fit object-center" src={"img/Category-Banners/" + el.img + ".png"} />
                                             <div class="px-8 py-5 relative z-10 w-80 h-44 bg-black opacity-0 hover:opacity-90">
-                                                <h1 class="pt-10  opacity-140 title-font text-lg font-medium text-white mb-3">{el}</h1>
-                                                <button onClick={() => { handleDetaileCourseView(el) }} className='cursor-pointer opacity-140  bg-white px-2 py-2 text-xs font-bold'>Click Here</button>
+                                                <h1 class="pt-10  opacity-140 title-font text-lg font-medium text-white mb-3">{el.title}</h1>
+                                                <button onClick={() => { handleDetaileCourseView(el.title) }} className='cursor-pointer opacity-140  bg-white px-2 py-2 text-xs font-bold'>Click Here</button>
                                             </div>
                                         </div>
                                         <div className='flex flex-row justify-between items-center'>
-                                            <p className='text-sm font-bold text-gray-500'>{el}</p>
+                                            <p className='text-sm font-bold text-gray-500'>{el.title}</p>
                                             <ul class="flex justify-end py-2">
                                                 <li>
                                                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-3 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -341,7 +341,7 @@ function CoursesCategory(props) {
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
                         <h1 class="sm:text-2xl text-2xl text-left font-bold title-font text-gray-600">Spoken English</h1>
                     </div>
-                    <div class="flex flex-wrap -m-2">
+                    <div class="flex flex-wrap sm:-m-2 px-2 sm:px-0">
                         {
                             ['Individual Spoken English', 'Advance Spoken English', 'Spoken English Super 3', '	Spoken English Crash Course'].map((el, index) => {
                                 return (
@@ -393,21 +393,20 @@ function CoursesCategory(props) {
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
                         <h1 class="sm:text-2xl text-2xl text-left font-bold title-font text-gray-600">Job Oriented Course</h1>
                     </div>
-                    <div class="flex flex-wrap -m-2">
+                    <div class="flex flex-wrap sm:-m-2 px-2 sm:px-0">
                         {
-                            ['Digital Marketing Course', 'I Tech Certified SoftWare Engineering', 'Diploma In Ms-Office & Tally', 'I Tech Certified HardWare And NetWork Engineer'].map((el, index) => {
+                            [{ 'title': 'Diploma In Ms-Office & Tally', img: 'SM-Diploma-In-Ms-Office-Tally' }, { 'title': 'I Tech Certified HardWare And NetWork Engineer', img: 'SM-I-Tech-Certified-HardWare-And-NetWork-Engineer' }, { 'title': 'I Tech Certified SoftWare Engineering', img: 'SM-I-Tech-Certified-SoftWare-Engineering' }, { 'title': 'I Tech Certified Animation Programs', img: 'SM-I-Tech-Certified-Animation-Programs' }].map((el, index) => {
                                 return (
-                                    <div class="lg:w-1/4 sm:w-1/2 p-2 cursor-pointer" key={index}>
+                                    <div onClick={() => { handleDetaileCourseView(el) }} class="lg:w-1/4 sm:w-1/2 p-2 cursor-pointer" key={index}>
                                         <div class="flex relative">
-                                            <img alt="gallery" class="absolute inset-0 w-80 h-44 object-fit object-center" src="img/Banner-Diploma-Ms-Office.png" />
-
-                                            <div class="px-8 py-10 relative z-10 w-80 h-44 bg-black opacity-0 hover:opacity-90">
-                                                <h1 class="pt-10  opacity-140 title-font text-lg font-medium text-white mb-3">{el}</h1>
-                                                <button className='cursor-pointer opacity-140  bg-white px-2 py-2 text-xs font-bold'>Click Here</button>
+                                        <img alt="gallery" class="absolute  inset-0 w-80 h-44 object-fit object-center" src={"img/Category-Banners/" + el.img + ".png"} />
+                                            <div class="px-8 py-5 relative z-10 w-80 h-44 bg-black opacity-0 hover:opacity-90">
+                                                <h1 class="pt-10  opacity-140 title-font text-lg font-medium text-white mb-3">{el.title}</h1>
+                                                <button onClick={() => { handleDetaileCourseView(el.title) }} className='cursor-pointer opacity-140  bg-white px-2 py-2 text-xs font-bold'>Click Here</button>
                                             </div>
                                         </div>
                                         <div className='flex flex-row justify-between items-center'>
-                                            <p className='text-sm font-bold text-gray-500'>{el}</p>
+                                            <p className='text-sm font-bold text-gray-500'>{el.title}</p>
                                             <ul class="flex justify-end py-2">
                                                 <li>
                                                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-3 text-yellow-500 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">

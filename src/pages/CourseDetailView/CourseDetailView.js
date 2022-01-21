@@ -11,11 +11,9 @@ const CourseDetailView = (props) => {
     }, [])
     return (
         <React.Fragment>
-            <section class="text-gray-600 py-16 space-y-28">
+            <section class="text-gray-600 space-y-28">
                 <div className='banner-section'>
                     <img style={{ height: '90vh' }} class="w-full object-cover object-center" src={`img/${props.history.location.img_banner}.png`} alt="blog" />
-                </div>
-                <div>
                     <LearnerPartners />
                 </div>
                 <div className='enquire-form-section' id='enquire-form'>
@@ -73,9 +71,9 @@ const CourseDetailView = (props) => {
                 <div>
                     <WhyJoin />
                 </div>
-                {/* <div>
+                <div>
                     <CertificatesYouEarn />
-                </div> */}
+                </div>
             </section>
         </React.Fragment >
     )

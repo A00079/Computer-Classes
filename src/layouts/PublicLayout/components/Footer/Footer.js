@@ -15,10 +15,12 @@ const Footer = (props) => {
         <div class="container px-5 py-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
             <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-              </svg>
-              <span style={{ fontFamily: 'Luckiest Guy' }} class="ml-3 text-xl tracking-wider"><span style={{ fontFamily: 'Luckiest Guy' }} className="text-white tracking-wider">SkillTech</span></span>
+              <img
+                className="h-8 w-auto sm:h-14"
+                src="/img/DCS-Brand-Logo-Black.png"
+                alt=""
+              />
+              {/* <span style={{ fontFamily: 'Luckiest Guy' }} class="ml-3 text-xl tracking-wider"><span style={{ fontFamily: 'Luckiest Guy' }} className="text-white tracking-wider">DCS<br /><span className="text-xs text-gray-500 font-bold">Computer Institute</span></span></span> */}
             </a>
             <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
           </div>
@@ -83,13 +85,15 @@ const Footer = (props) => {
         <div class="bg-gray-100">
           <div class="container px-5 py-3 mx-auto flex items-center sm:flex-row flex-col">
             <a class="flex title-font font-bold items-center md:justify-start justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-              </svg>
-              <span style={{ fontFamily: 'Luckiest Guy' }} class="ml-3 text-xl tracking-wider"><span style={{ fontFamily: 'Luckiest Guy' }} className="text-gray-600 tracking-wider">SkillTech</span></span>
+              <img
+                className="h-8 w-auto sm:h-14"
+                src="/img/DCS-Brand-Logo-White.png"
+                alt=""
+              />
+              {/* <span style={{ fontFamily: 'Luckiest Guy' }} class="ml-3 text-xl tracking-wider"><span style={{ fontFamily: 'Luckiest Guy' }} className="text-gray-600 tracking-wider">SkillTech</span></span> */}
             </a>
             <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2022 SkillTech —
-        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@team.candidleads@gmail.com</a>
+              <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@team.candidleads@gmail.com</a>
             </p>
             <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
               <a class="text-gray-500">
