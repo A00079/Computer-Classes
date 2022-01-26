@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { withRouter } from "react-router";
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 const ResgistraForm = (props) => {
     const [input, setInput] = useState({});
@@ -12,6 +13,14 @@ const ResgistraForm = (props) => {
 
     const handleFormSubmit = () => {
         console.log('Data', input);
+        const form_data = { data: input };
+        axios.post('http://dcs.candidleads.com/api/v1/details/form/enquiry', form_data)
+            .then((response) =>{
+                console.log('response',response);
+            })
+            .catch(error => {
+                console.error('There was an error!', error);
+            });
     }
     return (
         <React.Fragment>

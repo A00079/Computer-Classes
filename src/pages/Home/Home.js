@@ -21,8 +21,8 @@ const Home = () => {
   return (
     <React.Fragment>
       <section className="space-y-36" id="home-section">
-        <div class="w-full bg-cover object-contained bg-center h-screen" style={{ backgroundColor: "#000" }}>
-          <div class="flex items-center justify-center h-full w-full bg-gray-900 bg-opacity-50">
+        <div class="w-full bg-cover object-contained bg-center sm:h-screen" style={{ backgroundColor: "#000" }}>
+          <div class="flex items-start sm:items-center justify-center h-full w-full bg-gray-900 bg-opacity-50">
             <section class="text-gray-600 sm:px-20 px-5 body-font mt-28 md:mt-10 relative">
               <div class="mx-auto flex sm:pr-5 sm:py-24 md:flex-row flex-col items-center">
                 <div class="lg:max-w-lg  py-3 rounded-sm sm:py-16 lg:w-full md:w-1/2 w-full">

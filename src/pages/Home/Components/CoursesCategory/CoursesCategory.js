@@ -1,35 +1,45 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter } from "react-router";
-
+import Lottie from 'react-lottie';
+import animationData from '../../../../lotties/coming-soon.json';
 function CoursesCategory(props) {
+
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice"
+        }
+    };
 
     const [courseDiplomaData, setCourseData] = useState([
         {
             'title': 'Diploma In MS-Office',
             'sub_title': 'DIPLOMA',
-            'img': 'img/c1.png',
+            'img': 'MS-Office.png',
             'list': ['Computer Fundamental', 'Typing Tutorial', 'Windos', 'MS Paint / WordPad', 'MS Word', 'MS Excel', 'MS PowerPoint', 'MS Access (Database Concept)', 'Internet', 'Hardware Concept', 'Software Installation']
         },
         {
             'title': 'Diploma In Accounting (Tally)',
             'sub_title': 'DIPLOMA',
             'list': ['Accounting Concepts', 'Computerrized Accounting', 'Chart Of Accounts', 'Voucher And Invoice', 'Inventory MAster', 'Inventory Voucher', 'Bill Wise Details', 'Petty Cash', 'Bank Reconcillation', 'Interest Calculation', 'Texation (VAT,TDS,FBTService Tax)', 'Analysis & Reporting', 'Balance Sheet'],
-            'img': 'img/c2.jpg',
+            'img': 'Accounting-Tally.png',
 
         },
         {
             'title': 'Advance Excel',
             'sub_title': 'DIPLOMA',
             'list': ['Filteration Of Date', 'Pivot Table', 'MIS Report', 'Analis Report', 'Logical Function', 'Validation Of Data', 'Conditional Formatting', 'Micro With VB', 'Math And Trig', 'Micro', 'H LookUp', 'V LookUp', 'DataBase', 'FrontEnd', 'Backend'],
-            'img': 'img/c3.jpg',
+            'img': 'Advance-Excel.png',
 
         },
         {
             'title': 'Advance Tally With G.S.T',
             'sub_title': 'DIPLOMA',
             'list': ['Inventory And Accounting', 'Bank Reconcillacition (BRS)', 'Advance Financial Management', 'Cheque Rrinting', 'Excise For Dealer/ Manuture', 'Concept Of G.S.T', 'MultiTaxation On G.S.T', 'Point Of Sales in G.S.T', 'Service Tax On G.S.T', 'Payroll Compliance', 'Balance Sheet & MIS'],
-            'img': 'img/c4.jpg',
+            'img': 'Tally-With-GST.png',
         }]);
 
     const [courseDiplomaCareerOptions, setCourseDiplomaCareerOptions] = useState([
@@ -53,28 +63,28 @@ function CoursesCategory(props) {
         {
             'title': 'A+ (HardWare)',
             'sub_title': 'HARDWARE',
-            'img': 'img/c1.png',
+            'img': 'A-Hardware.png',
             'list': ['Computer Architecture and Parts Storage Device', 'Assembling Of Computer', 'Partitioning & Formating Hardisk', 'Installation of Software and Anti-Virus', 'Different Types Of Laptop Components', 'Laptop Assembling & Reparing', 'TroubleShooting & NetWork Concept']
         },
         {
             'title': 'N+ NetWorking',
             'sub_title': 'NETWORKING',
             'list': ['Networking Standards & Topologies', 'IP Addressing & Creating Subnets', 'Windows Server 2003 Networking', 'Managing Domains User  & Group', 'File & Folder Sharing, NT Backup', 'Managing Access Point & Wireless LAN', 'Troubleshooting Networking'],
-            'img': 'img/c2.jpg',
+            'img': 'N-Networking.png',
 
         },
         {
             'title': 'MCSE Excel (Microsoft Certified Software Engineering)',
             'sub_title': 'SOFTWARE ENGINEER',
             'list': ['70-410: Installing And Configuring Windows Server 2012', '70:411: Administering Windows Server 2012', '70:412: Configuring Advance Windows Server 2012 Service', 'Designing And Implementing a Server Infrastructure', '70:622: Micro Exchange Server 2010 Configuring'],
-            'img': 'img/c3.jpg',
+            'img': 'Msce-excel.png',
 
         },
         {
             'title': 'CCNA (Cisco Certified Network Associate)',
             'sub_title': 'NETWORK ASSOCIATE',
             'list': ['Networking', 'OSI Model, IP Addressing and VLSM', 'Configuring Router & Switch , Setting UP Routing methods', 'Managing CISCO Router, Managing Traffic With Acces limit', 'Loading IOS Backup Configuration', 'IPV6 And Wireless Networking', 'Concept Of Frame Relay, ISDN & DDR'],
-            'img': 'img/c4.jpg',
+            'img': 'CCNA.png',
         }
     ]);
     const [courseTechHardwareCareerOptions, setCourseTexhHardwareCareerOptions] = useState([
@@ -118,27 +128,27 @@ function CoursesCategory(props) {
         {
             'title': 'Diploma In Web Programming',
             'sub_title': 'DIPLOMA',
-            'img': 'img/c1.png',
+            'img': 'Dip-web-programing.png',
             'list': ['Internet Operatino', 'HTML DHTML', 'Javascript', 'XML', 'FTP (File Transter Protocol)', 'Assignment And Projects']
         },
         {
             'title': 'Programming Langauge',
             'sub_title': 'PROGRAMMING',
             'list': ['Programming Logic & Techniques', 'C Programming', 'C++ Programming', 'Assignment And Projects'],
-            'img': 'img/c2.jpg',
+            'img': 'Programing-Langauge.png',
         },
         {
             'title': 'JAVA Specialist',
             'sub_title': 'JAVA',
             'list': ['Oracle', 'Core Java', 'Advance Java(Beans, RMI,  and JSP)', 'Assignment And Projects'],
-            'img': 'img/c3.jpg',
+            'img': 'Java-Specialist.png',
 
         },
         {
             'title': '.NET Specialist',
             'sub_title': '.NET',
             'list': ['VB .NET', 'C# .NET', 'ASP .NET IIS', 'SQL Server', 'Assignment And Projects'],
-            'img': 'img/c4.jpg',
+            'img': 'NET-Specialist.png',
         }
     ]);
     const [courseTechSoftwareCareerOptions, setCourseTechSoftwareCareerOptions] = useState([
@@ -180,27 +190,27 @@ function CoursesCategory(props) {
         {
             'title': 'Graphics In Web Programming',
             'sub_title': 'GRAPHICS',
-            'img': 'img/c1.png',
+            'img': 'Graphic-Web-Programming.png',
             'list': ['Foundation Of Graphics Designing', 'Photoshop', 'Corel Draw', 'Indesign', 'Illustrator', 'HTML & DreamViwer', 'Flash With Action Script']
         },
         {
             'title': '2D Animation And Audio / Video Editing',
             'sub_title': '2D ANIMATION',
             'list': ['Drawing Colour & Anatomy', 'Concept Of Animation', 'Cinematograpy', 'Still Photography', 'StoryBoard & Animatic Design Using Flash', 'Introduction To Audio/ Video Editing', 'Sound Editing & Mixing With SoundBooth', 'Video Editing With Adobe Premiere'],
-            'img': 'img/c2.jpg',
+            'img': '2D-ANIM-Audio- Video-Editing.png',
         },
         {
             'title': '3D Visualisation & Animation',
             'sub_title': 'VISUALISATION',
             'list': ['Concept Of Flim Making', 'Production Pipline In 3D Animation', 'Acting for Animation', 'Digital Matte Painting Using PhotoShop', 'Clay Modling & Clay Animation', '3Ds Max', 'Charactor Studio', 'mud Box'],
-            'img': 'img/c3.jpg',
+            'img': '3D-Visualisation-Ani.png',
 
         },
         {
             'title': '3D Animation & Special Effects',
             'sub_title': '3D ANIMATION',
             'list': ['3D Modeling, Texturing , Lighting And Maya', '3D Animation and Dynamics using Maya', 'Concept Of Motion Graphics Design', 'After Effect', 'Fusion'],
-            'img': 'img/c4.jpg',
+            'img': '3D-Ani-Special-Effects.png',
         }
     ]);
 
@@ -341,7 +351,21 @@ function CoursesCategory(props) {
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
                         <h1 class="sm:text-2xl text-2xl text-left font-bold title-font text-gray-600">Spoken English</h1>
                     </div>
-                    <div class="flex flex-wrap sm:-m-2 px-2 sm:px-0">
+                    <div className="-z-60 hidden sm:block md:block lg:block 2xl:block">
+                        <Lottie
+                            options={defaultOptions}
+                            height={200}
+                            width={250}
+                        />
+                    </div>
+                    <div className="sm:hidden md:hidden lg:hidden 2xl:hidden">
+                        <Lottie
+                            options={defaultOptions}
+                            height={180}
+                            width={250}
+                        />
+                    </div>
+                    {/* <div class="flex flex-wrap sm:-m-2 px-2 sm:px-0">
                         {
                             ['Individual Spoken English', 'Advance Spoken English', 'Spoken English Super 3', '	Spoken English Crash Course'].map((el, index) => {
                                 return (
@@ -387,7 +411,7 @@ function CoursesCategory(props) {
                                 )
                             })
                         }
-                    </div>
+                    </div> */}
                     {/* Job Oriented Course */}
                     <div className='flex flex-row justify-start items-center space-x-4 mb-4 mt-12'>
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
@@ -399,7 +423,7 @@ function CoursesCategory(props) {
                                 return (
                                     <div onClick={() => { handleDetaileCourseView(el) }} class="lg:w-1/4 sm:w-1/2 p-2 cursor-pointer" key={index}>
                                         <div class="flex relative">
-                                        <img alt="gallery" class="absolute  inset-0 w-80 h-44 object-fit object-center" src={"img/Category-Banners/" + el.img + ".png"} />
+                                            <img alt="gallery" class="absolute  inset-0 w-80 h-44 object-fit object-center" src={"img/Category-Banners/" + el.img + ".png"} />
                                             <div class="px-8 py-5 relative z-10 w-80 h-44 bg-black opacity-0 hover:opacity-90">
                                                 <h1 class="pt-10  opacity-140 title-font text-lg font-medium text-white mb-3">{el.title}</h1>
                                                 <button onClick={() => { handleDetaileCourseView(el.title) }} className='cursor-pointer opacity-140  bg-white px-2 py-2 text-xs font-bold'>Click Here</button>

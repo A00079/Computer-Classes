@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { withRouter } from "react-router";
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 const ResgistraForm = (props) => {
 
@@ -11,12 +12,20 @@ const ResgistraForm = (props) => {
         setInput({ ...input, [name]: value });
     };
 
-    const handleFormSubmit = () =>{
-        console.log('Data',input);
+    const handleFormSubmit = () => {
+        console.log('Data', input);
+        const form_data = { data: input };
+        axios.post('http://dcs.candidleads.com/api/v1/details/form/registration', form_data)
+            .then((response) =>{
+                console.log('response',response);
+            })
+            .catch(error => {
+                console.error('There was an error!', error);
+            });
     }
     return (
         <React.Fragment>
-            <div class="min-h-screen py-28 px-5 bg-gray-100 flex items-center justify-center">
+            <div class="min-h-screen py-10 px-5 bg-gray-100 flex items-center justify-center">
                 <div class="container max-w-screen-lg mx-auto">
                     <div>
                         <h2 class="font-semibold text-xl text-gray-600">Student Admission Form</h2>
@@ -41,11 +50,11 @@ const ResgistraForm = (props) => {
                                         </div>
                                         <div class="md:col-span-2">
                                             <label for="city">City</label>
-                                            <input onChange={handleInputChange} type="text" name="city" id="city" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"  placeholder="" />
+                                            <input onChange={handleInputChange} type="text" name="city" id="city" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" placeholder="" />
                                         </div>
                                         <div class="md:col-span-1">
                                             <label for="zipcode">Zipcode</label>
-                                            <input onChange={handleInputChange} type="text" name="zipcode" id="zipcode" class="transition-all flex items-center h-10 border mt-1 rounded px-4 w-full bg-gray-50" placeholder=""  />
+                                            <input onChange={handleInputChange} type="text" name="zipcode" id="zipcode" class="transition-all flex items-center h-10 border mt-1 rounded px-4 w-full bg-gray-50" placeholder="" />
                                         </div>
                                         <div class="md:col-span-2">
                                             <label for="email">Email Address</label>
@@ -54,11 +63,11 @@ const ResgistraForm = (props) => {
 
                                         <div class="md:col-span-2">
                                             <label for="city">Mobile No.</label>
-                                            <input onChange={handleInputChange} type="number" name="mobile_no" id="mobile_no" class="focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none h-10 border mt-1 rounded px-4 w-full bg-gray-50"  placeholder="" />
+                                            <input onChange={handleInputChange} type="number" name="mobile_no" id="mobile_no" class="focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none h-10 border mt-1 rounded px-4 w-full bg-gray-50" placeholder="" />
                                         </div>
                                         <div class="md:col-span-1">
                                             <label for="city">Age</label>
-                                            <input onChange={handleInputChange} type="number" name="age" id="age" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"  placeholder="" />
+                                            <input onChange={handleInputChange} type="number" name="age" id="age" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" placeholder="" />
                                         </div>
                                         <div class="md:col-span-2">
                                             <div class="datepicker relative form-floating" data-mdb-toggle-button="false">
