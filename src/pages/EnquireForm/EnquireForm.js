@@ -3,7 +3,7 @@ import { withRouter } from "react-router";
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-const ResgistraForm = (props) => {
+const EnquireForm = (props) => {
     const [input, setInput] = useState({});
 
     const handleInputChange = (e) => {
@@ -12,15 +12,15 @@ const ResgistraForm = (props) => {
     };
 
     const handleFormSubmit = () => {
-        console.log('Data', input);
-        const form_data = { data: input };
-        axios.post('http://dcs.candidleads.com/api/v1/details/form/enquiry', form_data)
-            .then((response) =>{
-                console.log('response',response);
-            })
-            .catch(error => {
-                console.error('There was an error!', error);
-            });
+        // console.log('Data', input);
+
+        // axios.post('http://dcsinstitute.in/api/v1/details/form/enquiry', input)
+        //     .then((response) => {
+        //         console.log('response', response);
+        //     })
+        //     .catch(error => {
+        //         console.error('There was an error!', error);
+        //     });
     }
     return (
         <React.Fragment>
@@ -62,11 +62,11 @@ const ResgistraForm = (props) => {
 
                                         <div class="md:col-span-2">
                                             <label for="city">Mobile No.</label>
-                                            <input onChange={handleInputChange} type="number" name="mobile_no" id="mobile_no" class="focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none h-10 border mt-1 rounded px-4 w-full bg-gray-50"  placeholder="" />
+                                            <input onChange={handleInputChange} type="number" name="mobile_no" id="mobile_no" class="focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none h-10 border mt-1 rounded px-4 w-full bg-gray-50" placeholder="" />
                                         </div>
                                         <div class="md:col-span-2">
                                             <label for="course">Select You Course Category</label>
-                                            <select onChange={handleInputChange}  name="course" id="course" className='focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none h-10 border mt-1 rounded px-1 w-full bg-gray-50'>
+                                            <select onChange={handleInputChange} name="course" id="course" className='focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none h-10 border mt-1 rounded px-1 w-full bg-gray-50'>
                                                 <option value="volvo">Volvo</option>
                                                 <option value="saab">Saab</option>
                                                 <option value="mercedes">Mercedes</option>
@@ -89,7 +89,7 @@ const ResgistraForm = (props) => {
                                                 <Link to='/'>
                                                     <button class="mr-4 bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Back</button>
                                                 </Link>
-                                                <button onClick={() => { handleFormSubmit() }}  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
+                                                <button onClick={() => handleFormSubmit()} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
                                             </div>
                                         </div>
                                     </div>
@@ -103,4 +103,4 @@ const ResgistraForm = (props) => {
     )
 }
 
-export default withRouter(ResgistraForm);
+export default withRouter(EnquireForm);

@@ -14,8 +14,7 @@ const ResgistraForm = (props) => {
 
     const handleFormSubmit = () => {
         console.log('Data', input);
-        const form_data = { data: input };
-        axios.post('http://dcs.candidleads.com/api/v1/details/form/registration', form_data)
+        axios.post('http://dcsinstitute.in/api/v1/details/form/registration', input)
             .then((response) =>{
                 console.log('response',response);
             })
