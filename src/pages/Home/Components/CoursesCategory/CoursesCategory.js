@@ -255,6 +255,7 @@ function CoursesCategory(props) {
         let course_title = '';
         let career_option = '';
         let card_height = 'no';
+        let course_duration = "";
         let img_banner = '';
         if (title == 'Diploma In Ms-Office & Tally') {
             courses_Data = courseDiplomaData;
@@ -262,12 +263,14 @@ function CoursesCategory(props) {
             career_option = courseDiplomaCareerOptions;
             card_height = 'no';
             img_banner = 'Banner-Diploma-Ms-Office';
+            course_duration = "6 Months";
         } else if (title == 'DCS Certified HardWare And NetWork Engineer') {
             courses_Data = courseITechData;
             course_title = title;
             career_option = courseTechHardwareCareerOptions;
             card_height = 'yes';
             img_banner = 'ITech_Certified_HardWare_And_NetWork_Engineer';
+            course_duration = "6 Months";
         }
         else if (title == 'DCS Certified SoftWare Engineering') {
             courses_Data = courseITechSoftwareData;
@@ -275,6 +278,7 @@ function CoursesCategory(props) {
             career_option = courseTechSoftwareCareerOptions;
             card_height = 'no';
             img_banner = 'I_Tech_Certified_SoftWare_Engineering';
+            course_duration = "18 Months";
         }
         else if (title == 'DCS Certified Animation Programs') {
             courses_Data = courseITechAnimationData;
@@ -282,8 +286,9 @@ function CoursesCategory(props) {
             career_option = courseTechAnimationCareerOptions;
             card_height = 'yes';
             img_banner = 'ITech_Certified_Animation_Programs';
+            course_duration = "18 Months";
         }
-        props.history.push({ pathname: '/course-detail-view', state: courses_Data, title: course_title, careerOptionsData: career_option, card_height: card_height, img_banner: img_banner })
+        props.history.push({ pathname: '/course-detail-view', state: courses_Data, title: course_title, careerOptionsData: career_option, card_height: card_height, img_banner: img_banner,course_duration: course_duration })
     }
 
     return (

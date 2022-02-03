@@ -108,12 +108,12 @@ const EnquireForm = (props) => {
                                     </div>
                                     <div className='flex flex-col items-start mt-5 space-y-1'>
                                         <div>
-                                            <p className='text-gray-600 font-bold text-sm'>Duration: <span className='text-blue-500'>3 Months</span></p>
+                                            <p className='text-gray-600 font-bold text-sm'>Duration: <span className='text-blue-500'>{props.courseData.course_duration}</span></p>
                                         </div>
                                         <div>
-                                            <p className='text-gray-600 font-bold text-sm'>Certification: <span className='text-blue-500'>FastInfo Class</span></p>
+                                            <p className='text-gray-600 font-bold text-sm'>Certification: <span className='text-blue-500'>DCS Class</span></p>
                                         </div>
-                                        <div>
+                                        {/* <div>
                                             <p className='text-gray-600 font-bold text-sm'>Monthly Fee:<span className='text-blue-500'> 499/-</span></p>
                                         </div>
                                         <div>
@@ -121,7 +121,7 @@ const EnquireForm = (props) => {
                                         </div>
                                         <div>
                                             <p className='text-gray-600 font-bold text-sm'>Eligibility Age:<span className='text-blue-500'> 3 to 16 years</span></p>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>
