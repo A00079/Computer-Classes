@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { withRouter } from "react-router";
 import EnquireForm from '../../components/EnquireForm/EnquireForm';
 import { CareerOptions, WhyJoin, CertificatesYouEarn, LearnerPartners } from './components';
+import { WhyChooseUs } from "../../../src/components";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const CourseDetailView = (props) => {
@@ -74,6 +75,9 @@ const CourseDetailView = (props) => {
                 </div>
                 <div>
                     <CertificatesYouEarn />
+                    <div className='pb-20'>
+                        <WhyChooseUs />
+                    </div>
                 </div>
             </section>
         </React.Fragment >

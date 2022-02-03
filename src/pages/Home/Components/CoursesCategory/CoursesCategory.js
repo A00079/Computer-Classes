@@ -262,21 +262,21 @@ function CoursesCategory(props) {
             career_option = courseDiplomaCareerOptions;
             card_height = 'no';
             img_banner = 'Banner-Diploma-Ms-Office';
-        } else if (title == 'I Tech Certified HardWare And NetWork Engineer') {
+        } else if (title == 'DCS Certified HardWare And NetWork Engineer') {
             courses_Data = courseITechData;
             course_title = title;
             career_option = courseTechHardwareCareerOptions;
             card_height = 'yes';
             img_banner = 'ITech_Certified_HardWare_And_NetWork_Engineer';
         }
-        else if (title == 'I Tech Certified SoftWare Engineering') {
+        else if (title == 'DCS Certified SoftWare Engineering') {
             courses_Data = courseITechSoftwareData;
             course_title = title;
             career_option = courseTechSoftwareCareerOptions;
             card_height = 'no';
             img_banner = 'I_Tech_Certified_SoftWare_Engineering';
         }
-        else if (title == 'I Tech Certified Animation Programs') {
+        else if (title == 'DCS Certified Animation Programs') {
             courses_Data = courseITechAnimationData;
             course_title = title;
             career_option = courseTechAnimationCareerOptions;
@@ -301,7 +301,7 @@ function CoursesCategory(props) {
                     </div>
                     <div class="flex flex-wrap sm:-m-2 px-2 sm:px-0">
                         {
-                            [{ 'title': 'Diploma In Ms-Office & Tally', img: 'SM-Diploma-In-Ms-Office-Tally' }, { 'title': 'I Tech Certified HardWare And NetWork Engineer', img: 'SM-I-Tech-Certified-HardWare-And-NetWork-Engineer' }, { 'title': 'I Tech Certified SoftWare Engineering', img: 'SM-I-Tech-Certified-SoftWare-Engineering' }, { 'title': 'I Tech Certified Animation Programs', img: 'SM-I-Tech-Certified-Animation-Programs' }].map((el, index) => {
+                            [{ 'title': 'Diploma In Ms-Office & Tally', img: 'SM-Diploma-In-Ms-Office-Tally' }, { 'title': 'DCS Certified HardWare And NetWork Engineer', img: 'SM-I-Tech-Certified-HardWare-And-NetWork-Engineer' }, { 'title': 'DCS Certified SoftWare Engineering', img: 'SM-I-Tech-Certified-SoftWare-Engineering' }, { 'title': 'DCS Certified Animation Programs', img: 'SM-I-Tech-Certified-Animation-Programs' }].map((el, index) => {
                                 return (
                                     <div onClick={() => { handleDetaileCourseView(el.title) }} class="lg:w-1/4 sm:w-1/2 p-2 cursor-pointer" key={index}>
                                         <div class="flex relative">
@@ -419,7 +419,7 @@ function CoursesCategory(props) {
                     </div>
                     <div class="flex flex-wrap sm:-m-2 px-2 sm:px-0">
                         {
-                            [{ 'title': 'Diploma In Ms-Office & Tally', img: 'SM-Diploma-In-Ms-Office-Tally' }, { 'title': 'I Tech Certified HardWare And NetWork Engineer', img: 'SM-I-Tech-Certified-HardWare-And-NetWork-Engineer' }, { 'title': 'I Tech Certified SoftWare Engineering', img: 'SM-I-Tech-Certified-SoftWare-Engineering' }, { 'title': 'I Tech Certified Animation Programs', img: 'SM-I-Tech-Certified-Animation-Programs' }].map((el, index) => {
+                            [{ 'title': 'Diploma In Ms-Office & Tally', img: 'SM-Diploma-In-Ms-Office-Tally' }, { 'title': 'DCS Certified HardWare And NetWork Engineer', img: 'SM-I-Tech-Certified-HardWare-And-NetWork-Engineer' }, { 'title': 'DCS Certified SoftWare Engineering', img: 'SM-I-Tech-Certified-SoftWare-Engineering' }, { 'title': 'DCS Certified Animation Programs', img: 'SM-I-Tech-Certified-Animation-Programs' }].map((el, index) => {
                                 return (
                                     <div onClick={() => { handleDetaileCourseView(el) }} class="lg:w-1/4 sm:w-1/2 p-2 cursor-pointer" key={index}>
                                         <div class="flex relative">

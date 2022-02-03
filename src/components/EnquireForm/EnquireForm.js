@@ -17,6 +17,8 @@ const EnquireForm = (props) => {
         axios.post('http://dcsinstitute.in/api/v1/details/form/enquiry', input)
             .then((response) => {
                 console.log('response', response);
+                alert("Thankyou For Submiting.");
+                props.history.push('/');
             })
             .catch(error => {
                 console.error('There was an error!', error);

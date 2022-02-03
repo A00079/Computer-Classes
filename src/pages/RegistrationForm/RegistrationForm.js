@@ -16,7 +16,8 @@ const ResgistraForm = (props) => {
         console.log('Data', input);
         axios.post('http://dcsinstitute.in/api/v1/details/form/registration', input)
             .then((response) =>{
-                console.log('response',response);
+                alert("Thankyou For Registering.");
+                props.history.push('/');
             })
             .catch(error => {
                 console.error('There was an error!', error);
