@@ -62,12 +62,13 @@ const EnquireForm = (props) => {
                                             <input onChange={handleInputChange} type="number" name="mobile_no" id="mobile_no" class="focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none h-10 border mt-1 rounded px-4 w-full bg-gray-50" placeholder="" />
                                         </div>
                                         <div class="md:col-span-2">
-                                            <label for="course">Select You Course Category</label>
+                                            <label for="course">Select Your Course Category</label>
                                             <select onChange={handleInputChange} name="course" id="course" className='focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none h-10 border mt-1 rounded px-1 w-full bg-gray-50'>
-                                                <option value="volvo">Volvo</option>
-                                                <option value="saab">Saab</option>
-                                                <option value="mercedes">Mercedes</option>
-                                                <option value="audi">Audi</option>
+                                                <option selected>Select Course Category</option>
+                                                <option value="Diploma In Ms-Office & Tally">Diploma In Ms-Office & Tally</option>
+                                                <option value="DCS Certified HardWare And NetWork Engineer">DCS Certified HardWare And NetWork Engineer</option>
+                                                <option value="DCS Certified SoftWare Engineering">DCS Certified SoftWare Engineering</option>
+                                                <option value="DCS Certified Animation Programs">DCS Certified Animation Programs</option>
                                             </select>
                                         </div>
                                         <div class="md:col-span-2">
