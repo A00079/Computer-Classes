@@ -49,13 +49,13 @@ const callsToAction = [
 const resources = [
   {
     name: 'Recommended Courses',
-    topics: ['Diploma In Ms-Office & Tally', 'I Tech Certified HardWare And NetWork Engineer', 'I Tech Certified SoftWare Engineering', 'I Tech Certified Animation Programs'],
+    topics: ['Diploma In Ms-Office & Tally', 'DCS Certified HardWare And NetWork Engineer', 'DCS Certified SoftWare Engineering', 'DCS Certified Animation Programs'],
     href: '#',
     icon: SupportIcon,
   },
   {
     name: 'Job Oriented Course',
-    topics: ['Diploma In Ms-Office & Tally', 'I Tech Certified HardWare And NetWork Engineer', 'I Tech Certified SoftWare Engineering', 'I Tech Certified Animation Programs'],
+    topics: ['Diploma In Ms-Office & Tally', 'DCS Certified HardWare And NetWork Engineer', 'DCS Certified SoftWare Engineering', 'DCS Certified Animation Programs'],
     href: '#',
     icon: CalendarIcon,
   },
@@ -330,21 +330,21 @@ const Navbar = (props) => {
       career_option = courseDiplomaCareerOptions;
       card_height = 'no';
       img_banner = 'Banner-Diploma-Ms-Office';
-    } else if (title == 'I Tech Certified HardWare And NetWork Engineer') {
+    } else if (title == 'DCS Certified HardWare And NetWork Engineer') {
       courses_Data = courseITechData;
       course_title = title;
       career_option = courseTechHardwareCareerOptions;
       card_height = 'yes';
       img_banner = 'ITech_Certified_HardWare_And_NetWork_Engineer';
     }
-    else if (title == 'I Tech Certified SoftWare Engineering') {
+    else if (title == 'DCS Certified SoftWare Engineering') {
       courses_Data = courseITechSoftwareData;
       course_title = title;
       career_option = courseTechSoftwareCareerOptions;
       card_height = 'no';
       img_banner = 'I_Tech_Certified_SoftWare_Engineering';
     }
-    else if (title == 'I Tech Certified Animation Programs') {
+    else if (title == 'DCS Certified Animation Programs') {
       courses_Data = courseITechAnimationData;
       course_title = title;
       career_option = courseTechAnimationCareerOptions;
