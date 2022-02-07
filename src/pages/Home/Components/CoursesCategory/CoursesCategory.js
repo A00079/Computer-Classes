@@ -59,6 +59,75 @@ function CoursesCategory(props) {
             'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
         }
     ])
+
+    const [courseDigitalMarketingData, setCourseDigitalMarketData] = useState([
+        {
+            'title': 'Search Engine Optimization Course (SEO)',
+            'sub_title': 'DIPLOMA',
+            'img': 'Search-Engine-Optimization.png',
+            'list': ['What is SEO , why it is important.', 'Tools to find Keywords (Paid & Free)', 'What is Google Adwords', 'Planning SEO of a website', 'What is Content Marketing', 'SEO & Webmaster Tools', 'Mobile SEO']
+        },
+        {
+            'title': 'Google Adwords & Mobile Marketing (PPC)',
+            'sub_title': 'DIPLOMA',
+            'list': ['Online advertising & Ad Networks ', 'Creation of Search Campaigns', 'Writing Compelling Ad Copies', 'Creation of Effective Campaigns and Ad groups', 'Digital Display Campaigning ', 'Tracking & measuring ROI of online advertising', 'Optimizing Ad Performance ', 'Marketing budget to various online advertising platforms '],
+            'img': 'Google-Adwords-Mobile-Marketing.png',
+        },
+        {
+            'title': 'Social Media Optimization Course(SMO)',
+            'sub_title': 'DIPLOMA',
+            'list': ['Define the communication strategy', 'Setting up brand presence ', 'Social Listening ', 'Engaging with followers', '	Engagement on Social Media', 'Understanding Social Media'],
+            'img': 'Social-Media-Optimization.png',
+        },
+        {
+            'title': 'Google Analytics',
+            'sub_title': 'DIPLOMA',
+            'list': ['Fundamentals of Google analytics', 'Monitoring bounce rate', 'Tracing conversions ', 'Monitoring traffic source ', '	Monitoring visitors behavior ', 'Measuring and Monitoring metrics', 'Setting up Dashboards'],
+            'img': 'Google-Analytics.png',
+        },
+        {
+            'title': 'Email Marketing ',
+            'sub_title': 'DIPLOMA',
+            'list': ['Essentials of Writing a good emil', 'Segmentation of subscribers, Scheduling sending frequency', 'Split testing and A/B testing of campaign', 'Monitoring Email Campaign'],
+            'img': 'Email-Marketing.png',
+        }
+    ]);
+    const [courseDigitalMarketingCareerOptions, setCourseDigitalMarketingCareerOptions] = useState([
+        {
+            'title': 'Hardware Engineer',
+            'img': 'engineers.png',
+            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+        },
+        {
+            'title': 'Network Support Engineer',
+            'img': 'engineers.png',
+            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+        },
+        {
+            'title': 'Network Designer',
+            'img': 'construction.png',
+
+            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+        },
+        {
+            'title': 'System Engineer',
+            'img': 'systemengineer-.png',
+
+            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+        },
+        {
+            'title': 'Network Administrator',
+            'img': 'administrator.png',
+
+            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+        },
+        {
+            'title': 'Network Analyst',
+            'img': 'analyst.png',
+
+            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+        }
+    ])
     const [courseITechData, setCourseITechData] = useState([
         {
             'title': 'A+ (HardWare)',
@@ -288,6 +357,14 @@ function CoursesCategory(props) {
             img_banner = 'ITech_Certified_Animation_Programs';
             course_duration = "18 Months";
         }
+        else if (title == 'Digital Marketing') {
+            courses_Data = courseDigitalMarketingData;
+            course_title = title;
+            career_option = courseDigitalMarketingCareerOptions;
+            card_height = 'yes';
+            img_banner = 'Digital-Marketing';
+            course_duration = "2 Months";
+        }
         props.history.push({ pathname: '/course-detail-view', state: courses_Data, title: course_title, careerOptionsData: career_option, card_height: card_height, img_banner: img_banner,course_duration: course_duration })
     }
 
@@ -306,7 +383,7 @@ function CoursesCategory(props) {
                     </div>
                     <div class="flex flex-wrap sm:-m-2 px-2 sm:px-0">
                         {
-                            [{ 'title': 'Diploma In Ms-Office & Tally', img: 'SM-Diploma-In-Ms-Office-Tally' }, { 'title': 'DCS Certified HardWare And NetWork Engineer', img: 'SM-I-Tech-Certified-HardWare-And-NetWork-Engineer' }, { 'title': 'DCS Certified SoftWare Engineering', img: 'SM-I-Tech-Certified-SoftWare-Engineering' }, { 'title': 'DCS Certified Animation Programs', img: 'SM-I-Tech-Certified-Animation-Programs' }].map((el, index) => {
+                            [{ 'title': 'Diploma In Ms-Office & Tally', img: 'SM-Diploma-In-Ms-Office-Tally' }, { 'title': 'DCS Certified HardWare And NetWork Engineer', img: 'SM-I-Tech-Certified-HardWare-And-NetWork-Engineer' }, { 'title': 'DCS Certified SoftWare Engineering', img: 'SM-I-Tech-Certified-SoftWare-Engineering' }, { 'title': 'DCS Certified Animation Programs', img: 'SM-I-Tech-Certified-Animation-Programs' },{ 'title': 'Digital Marketing', img: 'SM-Digital-Marketing' }].map((el, index) => {
                                 return (
                                     <div onClick={() => { handleDetaileCourseView(el.title) }} class="lg:w-1/4 sm:w-1/2 p-2 cursor-pointer" key={index}>
                                         <div class="flex relative">
@@ -424,7 +501,7 @@ function CoursesCategory(props) {
                     </div>
                     <div class="flex flex-wrap sm:-m-2 px-2 sm:px-0">
                         {
-                            [{ 'title': 'Diploma In Ms-Office & Tally', img: 'SM-Diploma-In-Ms-Office-Tally' }, { 'title': 'DCS Certified HardWare And NetWork Engineer', img: 'SM-I-Tech-Certified-HardWare-And-NetWork-Engineer' }, { 'title': 'DCS Certified SoftWare Engineering', img: 'SM-I-Tech-Certified-SoftWare-Engineering' }, { 'title': 'DCS Certified Animation Programs', img: 'SM-I-Tech-Certified-Animation-Programs' }].map((el, index) => {
+                            [{ 'title': 'Diploma In Ms-Office & Tally', img: 'SM-Diploma-In-Ms-Office-Tally' }, { 'title': 'DCS Certified HardWare And NetWork Engineer', img: 'SM-I-Tech-Certified-HardWare-And-NetWork-Engineer' }, { 'title': 'DCS Certified SoftWare Engineering', img: 'SM-I-Tech-Certified-SoftWare-Engineering' }, { 'title': 'DCS Certified Animation Programs', img: 'SM-I-Tech-Certified-Animation-Programs' },{ 'title': 'Digital Marketing', img: 'SM-Digital-Marketing' }].map((el, index) => {
                                 return (
                                     <div onClick={() => { handleDetaileCourseView(el) }} class="lg:w-1/4 sm:w-1/2 p-2 cursor-pointer" key={index}>
                                         <div class="flex relative">

@@ -53,9 +53,9 @@ const Home = () => {
                     <div class="flex relative w-7 h-7 justify-center items-center m-1 mr-2 -ml-3 rounded-full border-r-2 border-white"><img class="rounded-full" alt="A" src="https://randomuser.me/api/portraits/women/68.jpg" /> </div>
                     <div class="flex relative w-7 h-7 justify-center items-center m-1 mr-2 -ml-3 rounded-full border-r-2 border-white"><img class="rounded-full" alt="A" src="https://randomuser.me/api/portraits/women/68.jpg" /> </div>
                   </div>
-                  <div class="z-60 sm:hidden block sm:mt-7 mt-2 flex lg:flex-row md:flex-col" style={{zIndex: '99999'}}>
+                  <div class="sm:mt-7 mt-2 flex lg:flex-row md:flex-col">
                     <Link to='student-resgistration'>
-                      <button class="cursor-pointer bg-yellow-400 inline-flex py-3 sm:py-3 px-3 sm:px-5 rounded-sm items-center md:mt-4 mt-4 lg:mt-0 hover:bg-indigo-600 focus:outline-none">
+                      <button class="sm:hidden block cursor-pointer bg-yellow-400 inline-flex py-3 sm:py-3 px-3 sm:px-5 rounded-sm items-center md:mt-4 mt-4 lg:mt-0 hover:bg-indigo-600 focus:outline-none">
                         <span class="flex items-start flex-col leading-none">
                           <span class="title-font text-md sm:text-md font-bold text-gray-200">Register Form</span>
                         </span>
@@ -68,6 +68,14 @@ const Home = () => {
                         </span>
                       </button>
                     </Link> */}
+                    <a
+                      href="https://wa.me/8149322268"
+                      class="whatsapp_float"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fa fa-whatsapp whatsapp-icon"></i>
+                    </a>
                   </div>
                 </div>
               </div>

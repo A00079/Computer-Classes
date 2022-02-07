@@ -6,6 +6,7 @@ import axios from 'axios';
 
 const EnquireForm = (props) => {
     const [input, setInput] = useState({});
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -13,14 +14,17 @@ const EnquireForm = (props) => {
     };
 
     const handleFormSubmit = () => {
+        setIsLoading(true);
         console.log('Data', input);
         axios.post('http://dcsinstitute.in/api/v1/details/form/enquiry', input)
             .then((response) => {
                 console.log('response', response);
                 alert("Thankyou For Submiting.");
                 props.history.push('/');
+                setIsLoading(false);
             })
             .catch(error => {
+                setIsLoading(false);
                 console.error('There was an error!', error);
             });
     }
@@ -87,7 +91,7 @@ const EnquireForm = (props) => {
                                                 <Link to='/'>
                                                     <button class="mr-4 bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Back</button>
                                                 </Link>
-                                                <button onClick={() => { handleFormSubmit() }} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
+                                                <button onClick={() => { handleFormSubmit() }} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">{isLoading?'Submitting...':'Submit'}</button>
                                             </div>
                                         </div>
                                     </div>
