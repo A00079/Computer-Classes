@@ -43,7 +43,7 @@ function CertificatesYouEarn(props) {
                     <div class="flex flex-wrap items-center -mx-10">
                         <div class="relative w-full lg:w-1/2 px-10 mb-16 lg:mb-0">
                             <div class="relative lg:max-w-md lg:ml-auto z-10">
-                                <img class="object-cover w-full lg:w-112 h-160" src="/img/DCS-Certificate.webp" alt="" />
+                                <img class="object-cover w-full lg:w-112 h-160" src="/img/DCS-Certificate.png" alt="" />
                                 <div class="absolute bottom-0 left-0 w-full px-12">
                                     <div class="flex pt-10 pb-16 w-full border-t border-gray-200">
                                         <a class="inline-flex mr-10 w-20 h-20 items-center justify-center bg-white rounded-lg" href="#">
