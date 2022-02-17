@@ -16,7 +16,7 @@ const ResgistraForm = (props) => {
     const handleFormSubmit = () => {
         setIsLoading(true);
         console.log('Data', input);
-        axios.post('http://dcsinstitute.in/api/v1/details/form/registration', input)
+        axios.post('https://dcsinstitute.in/api/v1/details/form/registration', input)
             .then((response) =>{
                 setIsLoading(false);
                 alert("Registration Successfull...");

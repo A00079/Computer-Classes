@@ -16,7 +16,7 @@ const EnquireForm = (props) => {
     const handleFormSubmit = () => {
         setIsLoading(true);
         console.log('Data', input);
-        axios.post('http://dcsinstitute.in/api/v1/details/form/enquiry', input)
+        axios.post('https://dcsinstitute.in/api/v1/details/form/enquiry', input)
             .then((response) => {
                 console.log('response', response);
                 alert("Thankyou For Submiting.");
