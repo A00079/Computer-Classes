@@ -66,11 +66,6 @@ const resources = [
     icon: BookmarkAltIcon,
   },
 ]
-const recentPosts = [
-  { id: 1, name: 'Boost your conversion rate', href: '#' },
-  { id: 2, name: 'How to use search engine optimization to drive traffic to your site', href: '#' },
-  { id: 3, name: 'Improve your customer experience', href: '#' },
-]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -84,278 +79,360 @@ const Navbar = (props) => {
 
   const [courseDiplomaData, setCourseData] = useState([
     {
-      'title': 'Diploma In MS-Office',
-      'sub_title': 'DIPLOMA',
-      'img': 'img/c1.png',
-      'list': ['Computer Fundamental', 'Typing Tutorial', 'Windos', 'MS Paint / WordPad', 'MS Word', 'MS Excel', 'MS PowerPoint', 'MS Access (Database Concept)', 'Internet', 'Hardware Concept', 'Software Installation']
+        'title': 'Diploma In MS-Office',
+        'sub_title': 'DIPLOMA',
+        'img': 'MS-Office.png',
+        'list': ['Computer Fundamental', 'Typing Tutorial', 'Windos', 'MS Paint / WordPad', 'MS Word', 'MS Excel', 'MS PowerPoint', 'MS Access (Database Concept)', 'Internet', 'Hardware Concept', 'Software Installation']
     },
     {
-      'title': 'Diploma In Accounting (Tally)',
-      'sub_title': 'DIPLOMA',
-      'list': ['Accounting Concepts', 'Computerrized Accounting', 'Chart Of Accounts', 'Voucher And Invoice', 'Inventory MAster', 'Inventory Voucher', 'Bill Wise Details', 'Petty Cash', 'Bank Reconcillation', 'Interest Calculation', 'Texation (VAT,TDS,FBTService Tax)', 'Analysis & Reporting', 'Balance Sheet'],
-      'img': 'img/c2.jpg',
+        'title': 'Diploma In Accounting (Tally)',
+        'sub_title': 'DIPLOMA',
+        'list': ['Accounting Concepts', 'Computerrized Accounting', 'Chart Of Accounts', 'Voucher And Invoice', 'Inventory MAster', 'Inventory Voucher', 'Bill Wise Details', 'Petty Cash', 'Bank Reconcillation', 'Interest Calculation', 'Texation (VAT,TDS,FBTService Tax)', 'Analysis & Reporting', 'Balance Sheet'],
+        'img': 'Accounting-Tally.png',
 
     },
     {
-      'title': 'Advance Excel',
-      'sub_title': 'DIPLOMA',
-      'list': ['Filteration Of Date', 'Pivot Table', 'MIS Report', 'Analis Report', 'Logical Function', 'Validation Of Data', 'Conditional Formatting', 'Micro With VB', 'Math And Trig', 'Micro', 'H LookUp', 'V LookUp', 'DataBase', 'FrontEnd', 'Backend'],
-      'img': 'img/c3.jpg',
+        'title': 'Advance Excel',
+        'sub_title': 'DIPLOMA',
+        'list': ['Filteration Of Date', 'Pivot Table', 'MIS Report', 'Analis Report', 'Logical Function', 'Validation Of Data', 'Conditional Formatting', 'Micro With VB', 'Math And Trig', 'Micro', 'H LookUp', 'V LookUp', 'DataBase', 'FrontEnd', 'Backend'],
+        'img': 'Advance-Excel.png',
 
     },
     {
-      'title': 'Advance Tally With G.S.T',
-      'sub_title': 'DIPLOMA',
-      'list': ['Inventory And Accounting', 'Bank Reconcillacition (BRS)', 'Advance Financial Management', 'Cheque Rrinting', 'Excise For Dealer/ Manuture', 'Concept Of G.S.T', 'MultiTaxation On G.S.T', 'Point Of Sales in G.S.T', 'Service Tax On G.S.T', 'Payroll Compliance', 'Balance Sheet & MIS'],
-      'img': 'img/c4.jpg',
+        'title': 'Advance Tally With G.S.T',
+        'sub_title': 'DIPLOMA',
+        'list': ['Inventory And Accounting', 'Bank Reconcillacition (BRS)', 'Advance Financial Management', 'Cheque Rrinting', 'Excise For Dealer/ Manuture', 'Concept Of G.S.T', 'MultiTaxation On G.S.T', 'Point Of Sales in G.S.T', 'Service Tax On G.S.T', 'Payroll Compliance', 'Balance Sheet & MIS'],
+        'img': 'Tally-With-GST.png',
     }]);
 
-  const [courseDiplomaCareerOptions, setCourseDiplomaCareerOptions] = useState([
+const [courseDiplomaCareerOptions, setCourseDiplomaCareerOptions] = useState([
     {
-      'title': 'Computer Operator',
-      'img': 'workingoncomputer.png',
-      'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+        'title': 'Computer Operator',
+        'img': 'workingoncomputer.png',
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
     },
     {
-      'title': 'Data Entry Operator',
-      'img': 'dataentry.png',
-      'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+        'title': 'Data Entry Operator',
+        'img': 'dataentry.png',
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
     },
     {
-      'title': 'Account Departmant Of Company',
-      'img': 'AccountDepartmantOfCompany.png',
-      'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+        'title': 'Account Departmant Of Company',
+        'img': 'AccountDepartmantOfCompany.png',
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
     }
-  ])
-  const [courseITechData, setCourseITechData] = useState([
-    {
-      'title': 'A+ (HardWare)',
-      'sub_title': 'HARDWARE',
-      'img': 'img/c1.png',
-      'list': ['Computer Architecture and Parts Storage Device', 'Assembling Of Computer', 'Partitioning & Formating Hardisk', 'Installation of Software and Anti-Virus', 'Different Types Of Laptop Components', 'Laptop Assembling & Reparing', 'TroubleShooting & NetWork Concept']
-    },
-    {
-      'title': 'N+ NetWorking',
-      'sub_title': 'NETWORKING',
-      'list': ['Networking Standards & Topologies', 'IP Addressing & Creating Subnets', 'Windows Server 2003 Networking', 'Managing Domains User  & Group', 'File & Folder Sharing, NT Backup', 'Managing Access Point & Wireless LAN', 'Troubleshooting Networking'],
-      'img': 'img/c2.jpg',
+])
 
+const [courseDigitalMarketingData, setCourseDigitalMarketData] = useState([
+    {
+        'title': 'Search Engine Optimization Course (SEO)',
+        'sub_title': 'DIPLOMA',
+        'img': 'Search-Engine-Optimization.png',
+        'list': ['What is SEO , why it is important.', 'Tools to find Keywords (Paid & Free)', 'What is Google Adwords', 'Planning SEO of a website', 'What is Content Marketing', 'SEO & Webmaster Tools', 'Mobile SEO']
     },
     {
-      'title': 'MCSE Excel (Microsoft Certified Software Engineering)',
-      'sub_title': 'SOFTWARE ENGINEER',
-      'list': ['70-410: Installing And Configuring Windows Server 2012', '70:411: Administering Windows Server 2012', '70:412: Configuring Advance Windows Server 2012 Service', 'Designing And Implementing a Server Infrastructure', '70:622: Micro Exchange Server 2010 Configuring'],
-      'img': 'img/c3.jpg',
-
+        'title': 'Google Adwords & Mobile Marketing (PPC)',
+        'sub_title': 'DIPLOMA',
+        'list': ['Online advertising & Ad Networks ', 'Creation of Search Campaigns', 'Writing Compelling Ad Copies', 'Creation of Effective Campaigns and Ad groups', 'Digital Display Campaigning ', 'Tracking & measuring ROI of online advertising', 'Optimizing Ad Performance ', 'Marketing budget to various online advertising platforms '],
+        'img': 'Google-Adwords-Mobile-Marketing.png',
     },
     {
-      'title': 'CCNA (Cisco Certified Network Associate)',
-      'sub_title': 'NETWORK ASSOCIATE',
-      'list': ['Networking', 'OSI Model, IP Addressing and VLSM', 'Configuring Router & Switch , Setting UP Routing methods', 'Managing CISCO Router, Managing Traffic With Acces limit', 'Loading IOS Backup Configuration', 'IPV6 And Wireless Networking', 'Concept Of Frame Relay, ISDN & DDR'],
-      'img': 'img/c4.jpg',
+        'title': 'Social Media Optimization Course(SMO)',
+        'sub_title': 'DIPLOMA',
+        'list': ['Define the communication strategy', 'Setting up brand presence ', 'Social Listening ', 'Engaging with followers', '	Engagement on Social Media', 'Understanding Social Media'],
+        'img': 'Social-Media-Optimization.png',
+    },
+    {
+        'title': 'Google Analytics',
+        'sub_title': 'DIPLOMA',
+        'list': ['Fundamentals of Google analytics', 'Monitoring bounce rate', 'Tracing conversions ', 'Monitoring traffic source ', '	Monitoring visitors behavior ', 'Measuring and Monitoring metrics', 'Setting up Dashboards'],
+        'img': 'Google-Analytics.png',
+    },
+    {
+        'title': 'Email Marketing ',
+        'sub_title': 'DIPLOMA',
+        'list': ['Essentials of Writing a good emil', 'Segmentation of subscribers, Scheduling sending frequency', 'Split testing and A/B testing of campaign', 'Monitoring Email Campaign'],
+        'img': 'Email-Marketing.png',
     }
-  ]);
-  const [courseTechHardwareCareerOptions, setCourseTexhHardwareCareerOptions] = useState([
+]);
+const [courseDigitalMarketingCareerOptions, setCourseDigitalMarketingCareerOptions] = useState([
     {
-      'title': 'Hardware Engineer',
-      'img': 'engineers.png',
-      'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+        'title': 'Hardware Engineer',
+        'img': 'engineers.png',
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
     },
     {
-      'title': 'Network Support Engineer',
-      'img': 'engineers.png',
-      'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+        'title': 'Network Support Engineer',
+        'img': 'engineers.png',
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
     },
     {
-      'title': 'Network Designer',
-      'img': 'construction.png',
+        'title': 'Network Designer',
+        'img': 'construction.png',
 
-      'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
     },
     {
-      'title': 'System Engineer',
-      'img': 'systemengineer-.png',
+        'title': 'System Engineer',
+        'img': 'systemengineer-.png',
 
-      'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
     },
     {
-      'title': 'Network Administrator',
-      'img': 'administrator.png',
+        'title': 'Network Administrator',
+        'img': 'administrator.png',
 
-      'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
     },
     {
-      'title': 'Network Analyst',
-      'img': 'analyst.png',
+        'title': 'Network Analyst',
+        'img': 'analyst.png',
 
-      'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
     }
-  ])
-
-  const [courseITechSoftwareData, setCourseITechSoftwareData] = useState([
+])
+const [courseITechData, setCourseITechData] = useState([
     {
-      'title': 'Diploma In Web Programming',
-      'sub_title': 'DIPLOMA',
-      'img': 'img/c1.png',
-      'list': ['Internet Operatino', 'HTML DHTML', 'Javascript', 'XML', 'FTP (File Transter Protocol)', 'Assignment And Projects']
+        'title': 'A+ (HardWare)',
+        'sub_title': 'HARDWARE',
+        'img': 'A-Hardware.png',
+        'list': ['Computer Architecture and Parts Storage Device', 'Assembling Of Computer', 'Partitioning & Formating Hardisk', 'Installation of Software and Anti-Virus', 'Different Types Of Laptop Components', 'Laptop Assembling & Reparing', 'TroubleShooting & NetWork Concept']
     },
     {
-      'title': 'Programming Langauge',
-      'sub_title': 'PROGRAMMING',
-      'list': ['Programming Logic & Techniques', 'C Programming', 'C++ Programming', 'Assignment And Projects'],
-      'img': 'img/c2.jpg',
-    },
-    {
-      'title': 'JAVA Specialist',
-      'sub_title': 'JAVA',
-      'list': ['Oracle', 'Core Java', 'Advance Java(Beans, RMI,  and JSP)', 'Assignment And Projects'],
-      'img': 'img/c3.jpg',
+        'title': 'N+ NetWorking',
+        'sub_title': 'NETWORKING',
+        'list': ['Networking Standards & Topologies', 'IP Addressing & Creating Subnets', 'Windows Server 2003 Networking', 'Managing Domains User  & Group', 'File & Folder Sharing, NT Backup', 'Managing Access Point & Wireless LAN', 'Troubleshooting Networking'],
+        'img': 'N-Networking.png',
 
     },
     {
-      'title': '.NET Specialist',
-      'sub_title': '.NET',
-      'list': ['VB .NET', 'C# .NET', 'ASP .NET IIS', 'SQL Server', 'Assignment And Projects'],
-      'img': 'img/c4.jpg',
+        'title': 'MCSE Excel (Microsoft Certified Software Engineering)',
+        'sub_title': 'SOFTWARE ENGINEER',
+        'list': ['70-410: Installing And Configuring Windows Server 2012', '70:411: Administering Windows Server 2012', '70:412: Configuring Advance Windows Server 2012 Service', 'Designing And Implementing a Server Infrastructure', '70:622: Micro Exchange Server 2010 Configuring'],
+        'img': 'Msce-excel.png',
+
+    },
+    {
+        'title': 'CCNA (Cisco Certified Network Associate)',
+        'sub_title': 'NETWORK ASSOCIATE',
+        'list': ['Networking', 'OSI Model, IP Addressing and VLSM', 'Configuring Router & Switch , Setting UP Routing methods', 'Managing CISCO Router, Managing Traffic With Acces limit', 'Loading IOS Backup Configuration', 'IPV6 And Wireless Networking', 'Concept Of Frame Relay, ISDN & DDR'],
+        'img': 'CCNA.png',
     }
-  ]);
-  const [courseTechSoftwareCareerOptions, setCourseTechSoftwareCareerOptions] = useState([
+]);
+const [courseTechHardwareCareerOptions, setCourseTexhHardwareCareerOptions] = useState([
     {
-      'title': 'Web  Programmer',
-      'img': 'webprogrammer.png',
-      'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+        'title': 'Hardware Engineer',
+        'img': 'engineers.png',
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
     },
     {
-      'title': 'System Programmer',
-      'img': 'SystemProgrammer.png',
+        'title': 'Network Support Engineer',
+        'img': 'engineers.png',
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
+    },
+    {
+        'title': 'Network Designer',
+        'img': 'construction.png',
 
-      'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
     },
     {
-      'title': 'System Analyst',
-      'img': 'analyst.png',
-      'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
-    },
-    {
-      'title': 'Software Developer',
-      'img': 'SoftwareDeveloper.png',
-      'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
-    },
-    {
-      'title': 'Database Designer',
-      'img': 'database.png',
-      'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
-    },
-    {
-      'title': 'Project Manager',
-      'img': 'manager.png',
+        'title': 'System Engineer',
+        'img': 'systemengineer-.png',
 
-      'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
     },
-  ])
+    {
+        'title': 'Network Administrator',
+        'img': 'administrator.png',
 
-  const [courseITechAnimationData, setCourseITechAnimationData] = useState([
-    {
-      'title': 'Graphics In Web Programming',
-      'sub_title': 'GRAPHICS',
-      'img': 'img/c1.png',
-      'list': ['Foundation Of Graphics Designing', 'Photoshop', 'Corel Draw', 'Indesign', 'Illustrator', 'HTML & DreamViwer', 'Flash With Action Script']
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
     },
     {
-      'title': '2D Animation And Audio / Video Editing',
-      'sub_title': '2D ANIMATION',
-      'list': ['Drawing Colour & Anatomy', 'Concept Of Animation', 'Cinematograpy', 'Still Photography', 'StoryBoard & Animatic Design Using Flash', 'Introduction To Audio/ Video Editing', 'Sound Editing & Mixing With SoundBooth', 'Video Editing With Adobe Premiere'],
-      'img': 'img/c2.jpg',
-    },
-    {
-      'title': '3D Visualisation & Animation',
-      'sub_title': 'VISUALISATION',
-      'list': ['Concept Of Flim Making', 'Production Pipline In 3D Animation', 'Acting for Animation', 'Digital Matte Painting Using PhotoShop', 'Clay Modling & Clay Animation', '3Ds Max', 'Charactor Studio', 'mud Box'],
-      'img': 'img/c3.jpg',
+        'title': 'Network Analyst',
+        'img': 'analyst.png',
 
-    },
-    {
-      'title': '3D Animation & Special Effects',
-      'sub_title': '3D ANIMATION',
-      'list': ['3D Modeling, Texturing , Lighting And Maya', '3D Animation and Dynamics using Maya', 'Concept Of Motion Graphics Design', 'After Effect', 'Fusion'],
-      'img': 'img/c4.jpg',
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
     }
-  ]);
+])
 
-  const [courseTechAnimationCareerOptions, setCourseTechAnimationCareerOptions] = useState([
+const [courseITechSoftwareData, setCourseITechSoftwareData] = useState([
     {
-      'title': 'Graphics Designer',
-      'img': 'graphic-designer.png',
-      'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+        'title': 'Diploma In Web Programming',
+        'sub_title': 'DIPLOMA',
+        'img': 'Dip-web-programing.png',
+        'list': ['Internet Operatino', 'HTML DHTML', 'Javascript', 'XML', 'FTP (File Transter Protocol)', 'Assignment And Projects']
     },
     {
-      'title': '2D & 3D Animator',
-      'img': '3d-movie.png',
-      'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+        'title': 'Programming Langauge',
+        'sub_title': 'PROGRAMMING',
+        'list': ['Programming Logic & Techniques', 'C Programming', 'C++ Programming', 'Assignment And Projects'],
+        'img': 'Programing-Langauge.png',
     },
     {
-      'title': 'Audio & Video Editor',
-      'img': 'film-editor.png',
+        'title': 'JAVA Specialist',
+        'sub_title': 'JAVA',
+        'list': ['Oracle', 'Core Java', 'Advance Java(Beans, RMI,  and JSP)', 'Assignment And Projects'],
+        'img': 'Java-Specialist.png',
 
-      'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
     },
     {
-      'title': 'Web Designer',
-      'img': 'SoftwareDeveloper.png',
-
-      'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
-    },
-    {
-      'title': 'Special Effects Artist',
-      'img': 'effect-artist.png',
-
-      'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
-    },
-    {
-      'title': 'Motion Effects Artist',
-      'img': 'motion-artist.png',
-      'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+        'title': '.NET Specialist',
+        'sub_title': '.NET',
+        'list': ['VB .NET', 'C# .NET', 'ASP .NET IIS', 'SQL Server', 'Assignment And Projects'],
+        'img': 'NET-Specialist.png',
     }
-  ])
+]);
+const [courseTechSoftwareCareerOptions, setCourseTechSoftwareCareerOptions] = useState([
+    {
+        'title': 'Web  Programmer',
+        'img': 'webprogrammer.png',
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
+    },
+    {
+        'title': 'System Programmer',
+        'img': 'SystemProgrammer.png',
 
-  const handleDetaileCourseView = (title) => {
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
+    },
+    {
+        'title': 'System Analyst',
+        'img': 'analyst.png',
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
+    },
+    {
+        'title': 'Software Developer',
+        'img': 'SoftwareDeveloper.png',
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
+    },
+    {
+        'title': 'Database Designer',
+        'img': 'database.png',
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
+    },
+    {
+        'title': 'Project Manager',
+        'img': 'manager.png',
+
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
+    },
+])
+
+const [courseITechAnimationData, setCourseITechAnimationData] = useState([
+    {
+        'title': 'Graphics In Web Programming',
+        'sub_title': 'GRAPHICS',
+        'img': 'Graphic-Web-Programming.png',
+        'list': ['Foundation Of Graphics Designing', 'Photoshop', 'Corel Draw', 'Indesign', 'Illustrator', 'HTML & DreamViwer', 'Flash With Action Script']
+    },
+    {
+        'title': '2D Animation And Audio / Video Editing',
+        'sub_title': '2D ANIMATION',
+        'list': ['Drawing Colour & Anatomy', 'Concept Of Animation', 'Cinematograpy', 'Still Photography', 'StoryBoard & Animatic Design Using Flash', 'Introduction To Audio/ Video Editing', 'Sound Editing & Mixing With SoundBooth', 'Video Editing With Adobe Premiere'],
+        'img': '2D-ANIM-Audio- Video-Editing.png',
+    },
+    {
+        'title': '3D Visualisation & Animation',
+        'sub_title': 'VISUALISATION',
+        'list': ['Concept Of Flim Making', 'Production Pipline In 3D Animation', 'Acting for Animation', 'Digital Matte Painting Using PhotoShop', 'Clay Modling & Clay Animation', '3Ds Max', 'Charactor Studio', 'mud Box'],
+        'img': '3D-Visualisation-Ani.png',
+
+    },
+    {
+        'title': '3D Animation & Special Effects',
+        'sub_title': '3D ANIMATION',
+        'list': ['3D Modeling, Texturing , Lighting And Maya', '3D Animation and Dynamics using Maya', 'Concept Of Motion Graphics Design', 'After Effect', 'Fusion'],
+        'img': '3D-Ani-Special-Effects.png',
+    }
+]);
+
+const [courseTechAnimationCareerOptions, setCourseTechAnimationCareerOptions] = useState([
+    {
+        'title': 'Graphics Designer',
+        'img': 'graphic-designer.png',
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
+    },
+    {
+        'title': '2D & 3D Animator',
+        'img': '3d-movie.png',
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
+    },
+    {
+        'title': 'Audio & Video Editor',
+        'img': 'film-editor.png',
+
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
+    },
+    {
+        'title': 'Web Designer',
+        'img': 'SoftwareDeveloper.png',
+
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
+    },
+    {
+        'title': 'Special Effects Artist',
+        'img': 'effect-artist.png',
+
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
+    },
+    {
+        'title': 'Motion Effects Artist',
+        'img': 'motion-artist.png',
+        'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
+    }
+])
+
+const handleDetaileCourseView = (title) => {
     let courses_Data = '';
     let course_title = '';
     let career_option = '';
     let card_height = 'no';
+    let course_duration = "";
     let img_banner = '';
     if (title == 'Diploma In Ms-Office & Tally') {
-      courses_Data = courseDiplomaData;
-      course_title = title;
-      career_option = courseDiplomaCareerOptions;
-      card_height = 'no';
-      img_banner = 'Banner-Diploma-Ms-Office';
+        courses_Data = courseDiplomaData;
+        course_title = title;
+        career_option = courseDiplomaCareerOptions;
+        card_height = 'no';
+        img_banner = 'Banner-Diploma-Ms-Office';
+        course_duration = "6 Months";
     } else if (title == 'DCS Certified HardWare And NetWork Engineer') {
-      courses_Data = courseITechData;
-      course_title = title;
-      career_option = courseTechHardwareCareerOptions;
-      card_height = 'yes';
-      img_banner = 'ITech_Certified_HardWare_And_NetWork_Engineer';
+        courses_Data = courseITechData;
+        course_title = title;
+        career_option = courseTechHardwareCareerOptions;
+        card_height = 'yes';
+        img_banner = 'ITech_Certified_HardWare_And_NetWork_Engineer';
+        course_duration = "6 Months";
     }
     else if (title == 'DCS Certified SoftWare Engineering') {
-      courses_Data = courseITechSoftwareData;
-      course_title = title;
-      career_option = courseTechSoftwareCareerOptions;
-      card_height = 'no';
-      img_banner = 'I_Tech_Certified_SoftWare_Engineering';
+        courses_Data = courseITechSoftwareData;
+        course_title = title;
+        career_option = courseTechSoftwareCareerOptions;
+        card_height = 'no';
+        img_banner = 'I_Tech_Certified_SoftWare_Engineering';
+        course_duration = "18 Months";
     }
     else if (title == 'DCS Certified Animation Programs') {
-      courses_Data = courseITechAnimationData;
-      course_title = title;
-      career_option = courseTechAnimationCareerOptions;
-      card_height = 'yes';
-      img_banner = 'ITech_Certified_Animation_Programs';
+        courses_Data = courseITechAnimationData;
+        course_title = title;
+        career_option = courseTechAnimationCareerOptions;
+        card_height = 'yes';
+        img_banner = 'ITech_Certified_Animation_Programs';
+        course_duration = "18 Months";
     }
-    props.history.push({ pathname: '/course-detail-view', state: courses_Data, title: course_title, careerOptionsData: career_option, card_height: card_height, img_banner: img_banner })
-  }
+    else if (title == 'Digital Marketing') {
+        courses_Data = courseDigitalMarketingData;
+        course_title = title;
+        career_option = courseDigitalMarketingCareerOptions;
+        card_height = 'yes';
+        img_banner = 'Digital-Marketing';
+        course_duration = "2 Months";
+    }
+    props.history.push({ pathname: `/course-detail-view/${title}`, state: courses_Data, title: course_title, careerOptionsData: career_option, card_height: card_height, img_banner: img_banner, course_duration: course_duration })
+}
 
   return (
-    <Popover className="fixed bg-black w-full relative" style={{ zIndex: "9999" }}>
+    <Popover className="fixed bg-black w-full fixed" style={{ zIndex: "9999" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center py-2 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -374,70 +451,6 @@ const Navbar = (props) => {
             </Popover.Button>
           </div>
           <Popover.Group as="nav" className="hidden md:flex space-x-10">
-            {/* <Popover className="relative">
-              {({ open }) => (
-                <>
-                  <Popover.Button
-                    className={classNames(
-                      open ? 'text-gray-400' : 'text-gray-200',
-                      'group bg-transparent rounded-md inline-flex items-center text-base font-medium hover:text-gray-100'
-                    )}
-                  >
-                    <span>Solutions</span>
-                    <ChevronDownIcon
-                      className={classNames(
-                        open ? 'text-gray-600' : 'text-gray-400',
-                        'ml-2 h-5 w-5 group-hover:text-gray-500'
-                      )}
-                      aria-hidden="true"
-                    />
-                  </Popover.Button>
-
-                  <Transition
-                    as={Fragment}
-                    enter="transition ease-out duration-200"
-                    enterFrom="opacity-0 translate-y-1"
-                    enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in duration-150"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 translate-y-1"
-                  >
-                    <Popover.Panel className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
-                      <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                        <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                          {solutions.map((item) => (
-                            <a
-                              key={item.name}
-                              href={item.href}
-                              className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
-                            >
-                              <item.icon className="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" />
-                              <div className="ml-4">
-                                <p className="text-base font-medium text-gray-900">{item.name}</p>
-                                <p className="mt-1 text-sm text-gray-500">{item.description}</p>
-                              </div>
-                            </a>
-                          ))}
-                        </div>
-                        <div className="px-5 py-5 bg-gray-50 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
-                          {callsToAction.map((item) => (
-                            <div key={item.name} className="flow-root">
-                              <a
-                                href={item.href}
-                                className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
-                              >
-                                <item.icon className="flex-shrink-0 h-6 w-6 text-gray-400" aria-hidden="true" />
-                                <span className="ml-3">{item.name}</span>
-                              </a>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </Popover.Panel>
-                  </Transition>
-                </>
-              )}
-            </Popover> */}
 
             <div onClick={() => handleNAvigate('/')} className="cursor-pointer text-sm font-bold text-gray-200 hover:text-yellow-400">
               Home

@@ -7,14 +7,16 @@ function CareerOptions(props) {
         <section class="text-gray-600 body-font">
             <div className="container lg:text-center">
                 <div className='px-5 sm:px-0'>
-                <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Opportunities</h2>
-                <p className="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl">
-                    Career Options
-                </p>
-                <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-                    Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in
-                    accusamus quisquam.
-                </p>
+                    <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Opportunities</h2>
+                    <p className="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl">
+                        Career Options
+                    </p>
+                    <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                        Are you fed up with thinking about your career? <br />
+                        Are you at a career crossroads and need to make a decision? <br />
+                        Do you possess the skills that will enable you to advance in a certain field? <br />
+                        When it comes to choosing a job, our specialists at DCS have developed a list of careers that are quite popular among teenagers.
+                    </p>
                 </div>
                 <div>
 
@@ -23,7 +25,7 @@ function CareerOptions(props) {
                             props.careerOptionsData.map((el, index) => {
                                 return (
                                     <div class="sm:col-span-4  p-4 rounded-md border-gray-200 col-span-8">
-                                        <img class="w-20  mx-auto  mb-2 rounded-sm object-cover object-center" src={"/img/career-options/"+el.img} alt="blog"></img>
+                                        <img class="w-20  mx-auto  mb-2 rounded-sm object-cover object-center" src={"/img/career-options/" + el.img} alt="blog"></img>
                                         <div key={index} class="flex border-b border-gray-50">
                                             <div class="mr-1">
                                                 <span class="border border-gray-200 flex justify-center items-center w-12 h-12 bg-blue-50 text-lg font-bold rounded-full">{index + 1}</span>

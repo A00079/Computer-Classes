@@ -17,7 +17,8 @@ function BoostLearning() {
                 <div class="flex flex-col text-center w-full mb-10">
                     <h2 class="text-xs text-gray-500 tracking-widest font-bold title-font mb-1">BOOST LEARNING</h2>
                     <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-yellow-500">Boost Learning And Fast Track.</h1>
-                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base">This collection of courses is designed to provide you with all of the information and resources you'll need to boost your learning.Not only will you learn the concepts, but you will also gain practical experience with the subject.
+                    </p>
                     <div class="h-1 w-40 mt-4 mx-auto bg-yellow-500 rounded"></div>
                 </div>
             </div>
@@ -62,13 +63,13 @@ function BoostLearning() {
                             />
                         </div>
                         <div>
-                        <div className='hidden sm:block'>
-                            <Lottie
-                                options={defaultOptions}
-                                height={250}
-                                width={500}
-                            />
-                        </div>
+                            <div className='hidden sm:block'>
+                                <Lottie
+                                    options={defaultOptions}
+                                    height={250}
+                                    width={500}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

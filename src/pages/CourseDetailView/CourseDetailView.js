@@ -6,8 +6,20 @@ import { WhyChooseUs } from "../../../src/components";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const CourseDetailView = (props) => {
-
+    if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+        console.info("This page is reloaded");
+        document.location.href = "/";
+    } else {
+        console.info("This page is not reloaded");
+    }
     useEffect(() => {
+        console.log('akakamdd dldkdd =====================================>');
+        if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+            console.info("This page is reloaded");
+            document.location.href = "/";
+        } else {
+            console.info("This page is not reloaded");
+        }
         console.log('props.history.state', props.history.location.state);
     }, [])
     return (

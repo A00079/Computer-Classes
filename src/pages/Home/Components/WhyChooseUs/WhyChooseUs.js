@@ -43,7 +43,7 @@ function WhyChooseUs() {
                                 <h2 class="text-white text-lg title-font font-bold">Easy Registration</h2>
                             </div>
                             <div class="flex-grow">
-                                <p class="leading-relaxed text-white text-sm">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
+                                <p class="leading-relaxed text-white text-sm">We are happy to provide the greatest instructor support to our students to address their day-to-day problems and ensure that they comprehend the courses to stand out in the market.</p>
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ function WhyChooseUs() {
                                 <h2 class="text-gray-900 text-lg title-font font-bold">24/7 Live Support</h2>
                             </div>
                             <div class="flex-grow">
-                                <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
+                                <p class="leading-relaxed text-base">Our professionals are available to students 24 hours a day, 7 days a week.</p>
                             </div>
                         </div>
                     </div>

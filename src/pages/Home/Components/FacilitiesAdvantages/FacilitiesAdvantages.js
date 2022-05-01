@@ -60,7 +60,8 @@ function FacilitiesAdvantages() {
                     <div class="lg:flex-grow md:w-1/2 sm:border-r sm:border-gray-300 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left sm:mb-16 mb-6 md:mb-0 items-center text-center">
                         <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-indigo-600">DCS
                             <br class="inline-block" /><span className='text-gray-600'>FACILITIES</span>                         </h1>
-                        <p class="sm:mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+                        <p class="sm:mb-8 leading-relaxed">There is a multitude of online education marketplaces, and then there's us. We may not be the largest brand in the market, but we can ensure you that we will be the finest for you. We are both cost-effective and rapidly expanding.<br />
+                            We are incredibly dedicated to our students. Our students have access to us 24 hours a day, seven days a week.</p>
                     </div>
                     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-full px-5">
 
@@ -147,7 +148,7 @@ function FacilitiesAdvantages() {
                     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 px-5">
                         <h1 class="title-font sm:text-4xl text-3xl text-right mb-4 font-bold text-indigo-600">DCS
                             <br class="hidden lg:inline-block" /><span className='text-gray-600'>ADVANTAGES</span>                         </h1>
-                        <p class="mb-8 leading-relaxed text-right">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+                        <p class="mb-8 leading-relaxed text-right">Nobody wants to be stuck doing the same job with the same skill set for the rest of their lives. However, having completed the DCS institute courses allows you to pursue employment prospects in the market. If you enroll in the classes, you will find it much easier to advance in your work.</p>
                     </div>
                 </div>
             </section>

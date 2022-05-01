@@ -38,7 +38,7 @@ export default function Home() {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <p className="xl:w-80 text-base leading-normal text-center mt-4">When our designs need an expert opinion or approval, I know I can rely on your agency Thank you for all your help-I will be recommending you to everyone</p>
+                                <p className="xl:w-80 text-base leading-normal text-center mt-4">My problem was solved thanks to my instructor, who provided a fantastic platform for learning from the ground up.</p>
                             </div>
                             <div className="text-white group-hover:text-indigo-700 absolute bottom-0 -mb-6">
                                 <svg width={34} height={28} viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,7 +68,7 @@ export default function Home() {
                         <div className="flex flex-col items-center justify-center mt-10">
                             <img src="https://i.ibb.co/ZgF5Zzz/avatar-1.png" alt="profile pictre" className="w-12 h-12" />
                             <p className="text-base font-semibold leading-4 my-2 text-gray-800">Tom Koch</p>
-                            <p className="text-base leading-4 text-center text-gray-600">Developer</p>
+                            <p className="text-base leading-4 text-center text-gray-600">Student</p>
                         </div>
                     </div>
                     <div>
@@ -85,7 +85,7 @@ export default function Home() {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <p className="xl:w-80 text-base leading-normal text-center mt-4">When our designs need an expert opinion or approval, I know I can rely on your agency Thank you for all your help-I will be recommending you to everyone</p>
+                                <p className="xl:w-80 text-base leading-normal text-center mt-4">It's a good place to learn and grow your abilities. The ideal option for studying is to combine live classes with a self-paced course. Certificates provide value to these job seekers, as well as benefit current industry growth.</p>
                             </div>
                             <div className="text-white group-hover:text-indigo-700 absolute bottom-0 -mb-6">
                                 <svg width={34} height={28} viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -115,7 +115,7 @@ export default function Home() {
                         <div className="flex flex-col items-center justify-center mt-10">
                             <img src="https://i.ibb.co/8BLjmqz/avatar-2.png" alt="profile pictre" className="w-12 h-12" />
                             <p className="text-base font-semibold leading-4 my-2 text-gray-800">Alan Max</p>
-                            <p className="text-base leading-4 text-center text-gray-600">Designer</p>
+                            <p className="text-base leading-4 text-center text-gray-600">Student</p>
                         </div>
                     </div>
                     <div>
@@ -132,7 +132,7 @@ export default function Home() {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <p className="xl:w-80 text-base leading-normal text-center mt-4">When our designs need an expert opinion or approval, I know I can rely on your agency Thank you for all your help-I will be recommending you to everyone</p>
+                                <p className="xl:w-80 text-base leading-normal text-center mt-4">The instructor(s) are of excellent quality, explaining each pupil in such a way that there is no distinction between them. According to industry standards, the course content is of the highest quality. The customer service team is available 24 hours a day, 7 days a week.</p>
                             </div>
                             <div className="text-white group-hover:text-indigo-700 absolute bottom-0 -mb-6">
                                 <svg width={34} height={28} viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -162,7 +162,7 @@ export default function Home() {
                         <div className="flex flex-col items-center justify-center mt-10">
                             <img src="https://i.ibb.co/y0KCX7p/avatar-3.png" alt="profile pictre" className="w-12 h-12" />
                             <p className="text-base font-semibold leading-4 my-2 text-gray-800">Kera Joo</p>
-                            <p className="text-base leading-4 text-center text-gray-600">Support</p>
+                            <p className="text-base leading-4 text-center text-gray-600">Student</p>
                         </div>
                     </div>
                 </div>

@@ -46,17 +46,17 @@ function CoursesCategory(props) {
         {
             'title': 'Computer Operator',
             'img': 'workingoncomputer.png',
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         },
         {
             'title': 'Data Entry Operator',
             'img': 'dataentry.png',
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         },
         {
             'title': 'Account Departmant Of Company',
             'img': 'AccountDepartmantOfCompany.png',
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         }
     ])
 
@@ -96,36 +96,36 @@ function CoursesCategory(props) {
         {
             'title': 'Hardware Engineer',
             'img': 'engineers.png',
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         },
         {
             'title': 'Network Support Engineer',
             'img': 'engineers.png',
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         },
         {
             'title': 'Network Designer',
             'img': 'construction.png',
 
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         },
         {
             'title': 'System Engineer',
             'img': 'systemengineer-.png',
 
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         },
         {
             'title': 'Network Administrator',
             'img': 'administrator.png',
 
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         },
         {
             'title': 'Network Analyst',
             'img': 'analyst.png',
 
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         }
     ])
     const [courseITechData, setCourseITechData] = useState([
@@ -160,36 +160,36 @@ function CoursesCategory(props) {
         {
             'title': 'Hardware Engineer',
             'img': 'engineers.png',
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         },
         {
             'title': 'Network Support Engineer',
             'img': 'engineers.png',
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         },
         {
             'title': 'Network Designer',
             'img': 'construction.png',
 
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         },
         {
             'title': 'System Engineer',
             'img': 'systemengineer-.png',
 
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         },
         {
             'title': 'Network Administrator',
             'img': 'administrator.png',
 
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         },
         {
             'title': 'Network Analyst',
             'img': 'analyst.png',
 
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         }
     ])
 
@@ -224,34 +224,34 @@ function CoursesCategory(props) {
         {
             'title': 'Web  Programmer',
             'img': 'webprogrammer.png',
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         },
         {
             'title': 'System Programmer',
             'img': 'SystemProgrammer.png',
 
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         },
         {
             'title': 'System Analyst',
             'img': 'analyst.png',
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         },
         {
             'title': 'Software Developer',
             'img': 'SoftwareDeveloper.png',
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         },
         {
             'title': 'Database Designer',
             'img': 'database.png',
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         },
         {
             'title': 'Project Manager',
             'img': 'manager.png',
 
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         },
     ])
 
@@ -287,35 +287,35 @@ function CoursesCategory(props) {
         {
             'title': 'Graphics Designer',
             'img': 'graphic-designer.png',
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         },
         {
             'title': '2D & 3D Animator',
             'img': '3d-movie.png',
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         },
         {
             'title': 'Audio & Video Editor',
             'img': 'film-editor.png',
 
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         },
         {
             'title': 'Web Designer',
             'img': 'SoftwareDeveloper.png',
 
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         },
         {
             'title': 'Special Effects Artist',
             'img': 'effect-artist.png',
 
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         },
         {
             'title': 'Motion Effects Artist',
             'img': 'motion-artist.png',
-            'summary': 'It’s over, maecenas tincidunt malesuada dolor sit amet malesuada.'
+            'summary': 'A computer operator is an IT professional who supervises the operation of computer systems and ensures that the machine’s computers are working properly.'
         }
     ])
 
@@ -365,7 +365,7 @@ function CoursesCategory(props) {
             img_banner = 'Digital-Marketing';
             course_duration = "2 Months";
         }
-        props.history.push({ pathname: '/course-detail-view', state: courses_Data, title: course_title, careerOptionsData: career_option, card_height: card_height, img_banner: img_banner,course_duration: course_duration })
+        props.history.push({ pathname: `/course-detail-view/${title}`, state: courses_Data, title: course_title, careerOptionsData: career_option, card_height: card_height, img_banner: img_banner, course_duration: course_duration })
     }
 
     return (
@@ -374,7 +374,7 @@ function CoursesCategory(props) {
                 <div class="container px-5 py-24 mx-auto">
                     <div class="flex flex-col text-center w-full mb-20">
                         <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-yellow-400">Best Selected Courses Category For You.</h1>
-                        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
+                        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We provide a variety of courses, ranging from web development to digital marketing. For various students, different courses fulfill a variety of goals. So, for you students, here are some of our top courses. According to market research. Begin by going at the most popular courses listed below.</p>
                         <div class="h-1 w-40 mt-8 mx-auto bg-yellow-500 rounded"></div>
                     </div>
                     <div className='flex flex-row justify-start items-center space-x-4 mb-4'>
@@ -383,7 +383,7 @@ function CoursesCategory(props) {
                     </div>
                     <div class="flex flex-wrap sm:-m-2 px-2 sm:px-0">
                         {
-                            [{ 'title': 'Diploma In Ms-Office & Tally', img: 'SM-Diploma-In-Ms-Office-Tally' }, { 'title': 'DCS Certified HardWare And NetWork Engineer', img: 'SM-I-Tech-Certified-HardWare-And-NetWork-Engineer' }, { 'title': 'DCS Certified SoftWare Engineering', img: 'SM-I-Tech-Certified-SoftWare-Engineering' }, { 'title': 'DCS Certified Animation Programs', img: 'SM-I-Tech-Certified-Animation-Programs' },{ 'title': 'Digital Marketing', img: 'SM-Digital-Marketing' }].map((el, index) => {
+                            [{ 'title': 'Diploma In Ms-Office & Tally', img: 'SM-Diploma-In-Ms-Office-Tally' }, { 'title': 'DCS Certified HardWare And NetWork Engineer', img: 'SM-I-Tech-Certified-HardWare-And-NetWork-Engineer' }, { 'title': 'DCS Certified SoftWare Engineering', img: 'SM-I-Tech-Certified-SoftWare-Engineering' }, { 'title': 'DCS Certified Animation Programs', img: 'SM-I-Tech-Certified-Animation-Programs' }, { 'title': 'Digital Marketing', img: 'SM-Digital-Marketing' }].map((el, index) => {
                                 return (
                                     <div onClick={() => { handleDetaileCourseView(el.title) }} class="lg:w-1/4 sm:w-1/2 p-2 cursor-pointer" key={index}>
                                         <div class="flex relative">
@@ -501,7 +501,7 @@ function CoursesCategory(props) {
                     </div>
                     <div class="flex flex-wrap sm:-m-2 px-2 sm:px-0">
                         {
-                            [{ 'title': 'Diploma In Ms-Office & Tally', img: 'SM-Diploma-In-Ms-Office-Tally' }, { 'title': 'DCS Certified HardWare And NetWork Engineer', img: 'SM-I-Tech-Certified-HardWare-And-NetWork-Engineer' }, { 'title': 'DCS Certified SoftWare Engineering', img: 'SM-I-Tech-Certified-SoftWare-Engineering' }, { 'title': 'DCS Certified Animation Programs', img: 'SM-I-Tech-Certified-Animation-Programs' },{ 'title': 'Digital Marketing', img: 'SM-Digital-Marketing' }].map((el, index) => {
+                            [{ 'title': 'Diploma In Ms-Office & Tally', img: 'SM-Diploma-In-Ms-Office-Tally' }, { 'title': 'DCS Certified HardWare And NetWork Engineer', img: 'SM-I-Tech-Certified-HardWare-And-NetWork-Engineer' }, { 'title': 'DCS Certified SoftWare Engineering', img: 'SM-I-Tech-Certified-SoftWare-Engineering' }, { 'title': 'DCS Certified Animation Programs', img: 'SM-I-Tech-Certified-Animation-Programs' }, { 'title': 'Digital Marketing', img: 'SM-Digital-Marketing' }].map((el, index) => {
                                 return (
                                     <div onClick={() => { handleDetaileCourseView(el) }} class="lg:w-1/4 sm:w-1/2 p-2 cursor-pointer" key={index}>
                                         <div class="flex relative">

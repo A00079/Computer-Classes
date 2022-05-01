@@ -62,7 +62,7 @@ const Routes = () => {
         />
         <WithLayoutRoute
           exact
-          path="/course-detail-view"
+          path="/course-detail-view/:id"
           layout={PublicLayout}
           component={CourseDetailView}
         />
