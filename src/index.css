@@ -12,25 +12,37 @@ code {
     monospace;
 } */
 
+.home-bg-img {
+  background-image: url("./assets/dcs-home-banner.jpg");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+}
+
+
+
 /*Scroll bar*/
 .scroll::-webkit-scrollbar {
-   width: 6px;
+  width: 6px;
 }
 
 .scroll::-webkit-scrollbar-track {
-   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-   border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
 }
 
 .scroll::-webkit-scrollbar-thumb {
-   border-radius: 3px;
-   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
+
 /*END*/
 
 .overlay {
   position: absolute;
-  width: 0% !important; 
+  width: 0% !important;
   height: 0% !important;
 }
 
@@ -57,14 +69,14 @@ code {
 /* for mobile */
 @media screen and (max-width: 767px) {
   .whatsapp-icon {
-      margin-top: 10px;
+    margin-top: 10px;
   }
 
   .whatsapp_float {
-      width: 40px;
-      height: 40px;
-      bottom: 20px;
-      right: 10px;
-      font-size: 22px;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 10px;
+    font-size: 22px;
   }
 }

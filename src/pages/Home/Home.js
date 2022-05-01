@@ -22,7 +22,7 @@ const Home = () => {
     <React.Fragment>
       <section className="space-y-36" id="home-section">
         <div class="w-full bg-cover object-contained bg-center sm:h-screen" style={{ backgroundColor: "#000" }}>
-          <div class="flex items-start sm:items-center justify-center h-full w-full bg-yellow-500 bg-opacity-90">
+          <div class="flex items-start sm:items-center justify-center h-full w-full home-bg-img bg-yellow-500 bg-opacity-40">
             <section class="text-gray-600 sm:px-20 px-5 body-font mt-28 md:mt-10 relative">
               <div class="mx-auto flex sm:pr-5 sm:py-24 md:flex-row flex-col items-center">
                 <div class="lg:max-w-lg  py-3 rounded-sm sm:py-16 lg:w-full md:w-1/2 w-full">
@@ -43,16 +43,16 @@ const Home = () => {
                 </div>
                 <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                   <h1 style={{ fontFamily: 'Luckiest Guy' }} class="animate__animated animate__backInLeft bg-white px-2 rounded-sm title-font sm:text-md text-xs font-bold text-gray-600 tracking-wider">Grow your Skill's</h1>
-                  <h1 style={{ fontFamily: 'Luckiest Guy' }} class="title-font sm:text-6xl text-2xl mb-2  sm:mb-4 font-bold text-white tracking-wider animate__animated animate__backInLeft">Open the  <br />world of opportunities!<br /></h1>
-                  <p class="mb-2 md:mb-1 leading-relaxed text-xs sm:text-md text-white font-bold tracking-wider">A strong education is the foundation of any fulfilling career. You will gain a deeper understanding of the subjects while you study with us, which will be very valuable as you progress up the career ladder with solid abilities.</p>
-                  <div class="flex ml-2 flex-row-reverse justify-center">
+                  <h1 style={{ fontFamily: 'Luckiest Guy', color: '#0871F2' }} class="title-font sm:text-6xl text-2xl mb-2  sm:mb-4 font-bold text-white tracking-wider animate__animated animate__backInLeft">Open the  <br />world of opportunities!<br /></h1>
+                  <p class="mb-2 md:mb-1 leading-relaxed text-xs sm:text-md text-gray-600 font-bold tracking-wider bg-white p-2 shadow-2xl rounded-md">A strong education is the foundation of any fulfilling career. You will gain a deeper understanding of the subjects while you study with us, which will be very valuable as you progress up the career ladder with solid abilities.</p>
+                  {/* <div class="flex ml-2 flex-row-reverse justify-center">
                     <div class="flex relative w-7 h-7 bg-gray-500 justify-center items-center m-1 mr-2 -ml-3 rounded-full  text-xs text-white">+89 </div>
                     <div class="flex relative w-7 h-7 justify-center items-center m-1 mr-2 -ml-3 rounded-full border-r-2 border-white"><img class="rounded-full" alt="A" src="https://randomuser.me/api/portraits/women/68.jpg" /> </div>
                     <div class="flex relative w-7 h-7 justify-center items-center m-1 mr-2 -ml-3 rounded-full border-r-2 border-white"><img class="rounded-full" alt="A" src="https://randomuser.me/api/portraits/women/68.jpg" /> </div>
                     <div class="flex relative w-7 h-7 justify-center items-center m-1 mr-2 -ml-3 rounded-full border-r-2 border-white"><img class="rounded-full" alt="A" src="https://randomuser.me/api/portraits/women/68.jpg" /> </div>
                     <div class="flex relative w-7 h-7 justify-center items-center m-1 mr-2 -ml-3 rounded-full border-r-2 border-white"><img class="rounded-full" alt="A" src="https://randomuser.me/api/portraits/women/68.jpg" /> </div>
                     <div class="flex relative w-7 h-7 justify-center items-center m-1 mr-2 -ml-3 rounded-full border-r-2 border-white"><img class="rounded-full" alt="A" src="https://randomuser.me/api/portraits/women/68.jpg" /> </div>
-                  </div>
+                  </div> */}
                   <div class="sm:mt-7 mt-2 flex lg:flex-row md:flex-col">
                     <Link to='student-resgistration'>
                       <button class="sm:hidden block cursor-pointer bg-yellow-400 inline-flex py-3 sm:py-3 px-3 sm:px-5 rounded-sm items-center md:mt-4 mt-4 lg:mt-0 hover:bg-indigo-600 focus:outline-none">
