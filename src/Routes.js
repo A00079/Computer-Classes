@@ -19,6 +19,7 @@ import TearmsAndConditions from './pages/TearmsAndConditions';
 import RegistrationForm from './pages/RegistrationForm';
 import EnquireForm from './pages/EnquireForm';
 import CourseDetailView from './pages/CourseDetailView';
+import EnquireFormComp from './components/EnquireForm';
 
 const Routes = () => {
   return (
@@ -65,6 +66,12 @@ const Routes = () => {
           path="/course-detail-view/:id"
           layout={PublicLayout}
           component={CourseDetailView}
+        />
+        <WithLayoutRoute
+          exact
+          path="/course-enquire-form"
+          layout={PublicLayout}
+          component={EnquireFormComp}
         />
         <Route path="*" component={() => "404 NOT FOUND"} />
       </Switch>

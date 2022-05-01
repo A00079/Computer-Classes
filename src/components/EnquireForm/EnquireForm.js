@@ -13,6 +13,10 @@ const EnquireForm = (props) => {
         setInput({ ...input, [name]: value });
     };
 
+    useEffect(() =>{
+        console.log('kaka kaka al =====>',props.location.pathname);
+    },[])
+
     const handleFormSubmit = () => {
         setIsLoading(true);
         console.log('Data', input);
@@ -30,8 +34,12 @@ const EnquireForm = (props) => {
     }
     return (
         <React.Fragment>
-            <h2 class="font-semibold text-3xl px-10 text-center text-gray-600">Effective Ways To Get More out of <span className='text-blue-500'>{props.courseData.title}</span> Course by DCS class</h2>
-            <div class="flex items-center bg-white justify-center">
+            {
+                !!props.courseData ?
+                    <h2 class="font-semibold text-3xl px-10 text-center text-gray-600">Effective Ways To Get More out of <span className='text-blue-500'>{props.courseData.title}</span> Course by DCS class</h2> : ""
+            }
+
+            <div class={`flex items-center bg-white justify-center ${props.location.pathname == '/course-enquire-form'? "pt-20" :""}`}>
                 <div class="container mx-auto">
                     <div>
                         {/* <p class="text-gray-500 mb-6 text-center">Courses in other domains by us.</p> */}
@@ -91,13 +99,16 @@ const EnquireForm = (props) => {
                                                 <Link to='/'>
                                                     <button class="mr-4 bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Back</button>
                                                 </Link>
-                                                <button onClick={() => { handleFormSubmit() }} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">{isLoading?'Submitting...':'Submit'}</button>
+                                                <button onClick={() => { handleFormSubmit() }} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">{isLoading ? 'Submitting...' : 'Submit'}</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="text-gray-600 lg:col-span-6 col-span-12">
-                                    <p className='bg-yellow-400 text-black py-2 px-2 w-full rounded-sm text-sm font-bold'>Don't Waste Time! 5 Facts To Start {props.courseData.title} COURSE right Now</p>
+                                    {
+                                        !!props.courseData ? <p className='bg-yellow-400 text-black py-2 px-2 w-full rounded-sm text-sm font-bold'>Don't Waste Time! 5 Facts To Start {props.courseData.title} COURSE right Now</p> : ""
+                                    }
+
                                     <div className='flex flex-col justify-start items-start mt-6 space-y-3'>
                                         {
                                             ['Not getting Job anywhere due to lack of Industrial skills!', 'Struggling with a low paying Job!', 'Want to arise from Single Figure salary to high paying job?', 'Got right Products but No idea about how to reach customers and sell', 'Spending lot of time and money on traditional way of marketing but getting no results at all.'].map((el, index) => {
@@ -113,7 +124,10 @@ const EnquireForm = (props) => {
                                     </div>
                                     <div className='flex flex-col items-start mt-5 space-y-1'>
                                         <div>
-                                            <p className='text-gray-600 font-bold text-sm'>Duration: <span className='text-blue-500'>{props.courseData.course_duration}</span></p>
+                                            {
+                                                !!props.courseData?
+                                                <p className='text-gray-600 font-bold text-sm'>Duration: <span className='text-blue-500'>{props.courseData.course_duration}</span></p>: ""
+                                            }
                                         </div>
                                         <div>
                                             <p className='text-gray-600 font-bold text-sm'>Certification: <span className='text-blue-500'>DCS Class</span></p>
