@@ -371,7 +371,7 @@ function CoursesCategory(props) {
     return (
         <div>
             <section class="text-gray-600 body-font">
-                <div class="container px-5 py-24 mx-auto">
+                <div class="container px-5 pt-12 mx-auto">
                     <div class="flex flex-col text-center w-full mb-20">
                         <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-yellow-400">Best Selected Courses Category For You.</h1>
                         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We provide a variety of courses, ranging from web development to digital marketing. For various students, different courses fulfill a variety of goals. So, for you students, here are some of our top courses. According to market research. Begin by going at the most popular courses listed below.</p>
@@ -548,7 +548,7 @@ function CoursesCategory(props) {
                     </div>
                 </div>
             </section>
-            <div className="overflow-y-hidden">
+            {/* <div className="overflow-y-hidden">
                 <div className="mx-auto container py-10 px-4">
                     <div className="w-full flex justify-center">
                         <div className="w-full md:w-11/12 xl:w-10/12 bg-gradient-to-r from-indigo-500 to-indigo-700 md:py-8 md:px-8 px-5 py-4 xl:px-12 xl:py-16">
@@ -570,7 +570,7 @@ function CoursesCategory(props) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

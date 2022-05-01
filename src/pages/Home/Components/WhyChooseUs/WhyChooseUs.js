@@ -33,7 +33,7 @@ function WhyChooseUs() {
                 </div>
                 <div class="flex flex-wrap -m-4">
                     <div class="p-4 md:w-1/3">
-                        <div class="flex rounded-lg h-full bg-blue-700 shadow-2xl  p-8 flex-col">
+                        <div class="flex rounded-lg h-full bg-blue-700 shadow-2xl hover:bg-blue-700  p-8 flex-col">
                             <div class="flex items-center mb-3">
                                 <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-white text-white flex-shrink-0">
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 text-blue-500" viewBox="0 0 24 24">
@@ -48,7 +48,7 @@ function WhyChooseUs() {
                         </div>
                     </div>
                     <div class="p-4 md:w-1/3">
-                        <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                        <div class="flex rounded-lg h-full bg-gray-100 text-gray-900  hover:bg-blue-700 hover:text-white p-8 flex-col">
                             <div class="flex items-center mb-3">
                                 <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
@@ -56,15 +56,15 @@ function WhyChooseUs() {
                                         <circle cx="12" cy="7" r="4"></circle>
                                     </svg>
                                 </div>
-                                <h2 class="text-gray-900 text-lg title-font font-bold">Expert Instructor </h2>
+                                <h2 class="text-lg title-font font-bold">Expert Instructor </h2>
                             </div>
                             <div class="flex-grow">
-                                <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
+                                <p class="leading-relaxed text-base">We are happy to provide the greatest instructor support to our students to address their day-to-day problems and ensure that they comprehend the courses to stand out in the market.</p>
                             </div>
                         </div>
                     </div>
                     <div class="p-4 md:w-1/3">
-                        <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                        <div class="flex rounded-lg h-full bg-gray-100 text-gray-900  hover:bg-blue-700 hover:text-white p-8 flex-col">
                             <div class="flex items-center mb-3">
                                 <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
@@ -73,7 +73,7 @@ function WhyChooseUs() {
                                         <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
                                     </svg>
                                 </div>
-                                <h2 class="text-gray-900 text-lg title-font font-bold">24/7 Live Support</h2>
+                                <h2 class="text-lg title-font font-bold">24/7 Live Support</h2>
                             </div>
                             <div class="flex-grow">
                                 <p class="leading-relaxed text-base">Our professionals are available to students 24 hours a day, 7 days a week.</p>

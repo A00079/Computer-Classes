@@ -305,7 +305,7 @@ function ResourcesInsights(props) {
 
                 </div>
             </section>
-            <div className="bg-gray-100 overflow-y-hidden">
+            {/* <div className="bg-gray-100 overflow-y-hidden">
                 <div className="mx-auto container py-12 px-4">
                     <div className="w-full flex justify-center">
                         <div className="w-full md:w-11/12 xl:w-10/12 bg-gradient-to-r from-indigo-500 to-indigo-700 md:py-8 md:px-8 px-5 py-4 xl:px-12 xl:py-16">
@@ -327,7 +327,7 @@ function ResourcesInsights(props) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
