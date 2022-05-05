@@ -24,7 +24,7 @@ const CourseDetailView = (props) => {
     }, [])
     return (
         <React.Fragment>
-            <section class="text-gray-600 space-y-28">
+            <section class="text-gray-600 space-y-28 sm:pt-6">
                 <div className='banner-section'>
                     <img style={{ height: '90vh' }} class="hidden sm:block w-full object-cover object-center" src={`img/${props.history.location.img_banner}.png`} alt="blog" />
                     <img class="block sm:hidden w-full object-cover object-center" src={`img/${props.history.location.img_banner}.png`} alt="blog" />
