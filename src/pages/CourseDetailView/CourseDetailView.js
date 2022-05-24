@@ -10,21 +10,17 @@ const CourseDetailView = (props) => {
         console.info("This page is reloaded");
         document.location.href = "/";
     } else {
+        if (props.history.location.state == undefined) {
+            document.location.href = "/";
+        }
         console.info("This page is not reloaded");
     }
     useEffect(() => {
-        console.log('akakamdd dldkdd =====================================>');
-        if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
-            console.info("This page is reloaded");
-            document.location.href = "/";
-        } else {
-            console.info("This page is not reloaded");
-        }
-        console.log('props.history.state', props.history.location.state);
+        window.scrollTo(0, 0);
     }, [])
     return (
         <React.Fragment>
-            <section class="text-gray-600 space-y-28 sm:pt-6">
+            <section class="text-gray-600 space-y-28 sm:pt-16">
                 <div className='banner-section'>
                     <img style={{ height: '90vh' }} class="hidden sm:block w-full object-cover object-center" src={`img/${props.history.location.img_banner}.png`} alt="blog" />
                     <img class="block sm:hidden w-full object-cover object-center" src={`img/${props.history.location.img_banner}.png`} alt="blog" />

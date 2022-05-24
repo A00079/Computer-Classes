@@ -10,6 +10,9 @@ const EnquireForm = (props) => {
         const { name, value } = e.target;
         setInput({ ...input, [name]: value });
     };
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     const handleFormSubmit = () => {
         // console.log('Data', input);

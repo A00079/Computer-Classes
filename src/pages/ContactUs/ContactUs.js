@@ -14,6 +14,9 @@ const ContactUs = (props) => {
             alert("All fields are mandatory.")
         }
     }
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     return (
         <React.Fragment>

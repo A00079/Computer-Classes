@@ -3,12 +3,15 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import { Divider } from "@material-ui/core";
 import { withRouter } from 'react-router-dom';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Footer = (props) => {
 
   const goTo = (route) => {
     props.history.push(route);
   }
+
+  
   return (
     <React.Fragment>
       <footer class="bg-gray-900 text-gray-600 body-font">
@@ -22,7 +25,8 @@ const Footer = (props) => {
               />
               {/* <span style={{ fontFamily: 'Luckiest Guy' }} class="ml-3 text-xl tracking-wider"><span style={{ fontFamily: 'Luckiest Guy' }} className="text-white tracking-wider">DCS<br /><span className="text-xs text-gray-500 font-bold">Computer Institute</span></span></span> */}
             </a>
-            <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
+            <p class="mt-2 text-sm text-gray-500">Open the
+              world of opportunities!</p>
           </div>
           <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
@@ -32,13 +36,33 @@ const Footer = (props) => {
                   <a class="text-gray-600 hover:text-gray-200 font-semibold cursor-pointer">Home</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-200 font-semibold cursor-pointer">Academics</a>
+                  <Link
+                    to='best-professionals'
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={900}
+                  >
+                    <div className="text-gray-600 hover:text-gray-200 font-semibold cursor-pointer">
+                      Our Professionals
+                    </div>
+                  </Link>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-200 font-semibold cursor-pointer">Our Professionals</a>
+                  <Link
+                    to='testimonials'
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={900}
+                  >
+                    <div className="text-gray-600 hover:text-gray-200 font-semibold cursor-pointer">
+                      Testimonials
+                    </div>
+                  </Link>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-200 font-semibold cursor-pointer">Testimonials</a>
+                  <a onClick={() => goTo('/contact')} class="text-gray-600 hover:text-gray-200 font-semibold cursor-pointer">Contact</a>
                 </li>
               </nav>
             </div>
